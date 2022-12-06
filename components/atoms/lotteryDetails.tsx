@@ -16,7 +16,7 @@ const paper = {
 };
 
 const LotteryDetails = (props: any) => {
-  const { push } = useRouter();
+  const { push, back } = useRouter();
   const [session]: any = useSession();
   const { data, refresh, openDialog, id } = props;
   const [reloading, setReloading] = useState(false);
@@ -73,6 +73,17 @@ const LotteryDetails = (props: any) => {
         message: "Metamask application is required",
         action: function () {
           window.location.href = "https://metamask.io/download/";
+        },
+      });
+      return false;
+    }
+    if (data.timestamp < +new Date() / 1000) {
+      setPromptDialog({
+        open: true,
+        actionName: "go back",
+        message: `Game is expired at ${data.time}`,
+        action: function () {
+          back();
         },
       });
       return false;

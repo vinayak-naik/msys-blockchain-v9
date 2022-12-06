@@ -76,6 +76,7 @@ export const getMatch = async (matchId: any) => {
         statusString: statusString,
         totalParticipants: team1.length + team2.length,
         totalAmount: team1TotalAmount + team2TotalAmount,
+        timestamp: Number(match.timestamp),
       },
       team1Details: {
         length: team1.length,

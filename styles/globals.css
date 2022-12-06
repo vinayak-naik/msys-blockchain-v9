@@ -24,6 +24,7 @@ a {
 ::-webkit-scrollbar {
   display: none;
 }
+
 ::selection {
   color: red;
   background: yellow;

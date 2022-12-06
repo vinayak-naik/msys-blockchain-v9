@@ -19,7 +19,7 @@ const sx = {
 export const TeamDetails = (props: any) => {
   const [session]: any = useSession();
   const { matchDetails, teamDetails, team } = props;
-  const { push } = useRouter();
+  const { push, back } = useRouter();
   const [walletAddress, setWalletAddress] = useState("");
   const [promptDialog, setPromptDialog] = useState({
     open: false,
@@ -65,6 +65,17 @@ export const TeamDetails = (props: any) => {
         message: "Metamask application is required",
         action: function () {
           window.location.href = "https://metamask.io/download/";
+        },
+      });
+      return false;
+    }
+    if (matchDetails.timestamp - 50000 < +new Date() / 1000) {
+      setPromptDialog({
+        open: true,
+        actionName: "go back",
+        message: `${matchDetails.game} is expired at ${matchDetails.date} ${matchDetails.time}`,
+        action: function () {
+          back();
         },
       });
       return false;

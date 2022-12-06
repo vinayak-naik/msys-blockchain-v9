@@ -39,19 +39,25 @@ const MsysBetting = () => {
             <h1 className={style.header}>MSys Betting</h1>
             <div className={style.gridContainer}>
               <div className={style.gridItem}>
-                <div className={style.matchHeader}>Upcomming</div>
+                <div className={style.matchHeader} style={{ color: "#686868" }}>
+                  Upcomming
+                </div>
                 <div className={style.cardMainContainer}>
                   <MatchCards matches={data?.data?.upcomming} />
                 </div>
               </div>
               <div className={style.gridItem}>
-                <div className={style.matchHeader}>Active</div>
+                <div className={style.matchHeader} style={{ color: "#ff7600" }}>
+                  Active
+                </div>
                 <div className={style.cardMainContainer}>
                   <MatchCards matches={data?.data?.active} />
                 </div>
               </div>
               <div className={style.gridItem}>
-                <div className={style.matchHeader}>Completed</div>
+                <div className={style.matchHeader} style={{ color: "green" }}>
+                  Completed
+                </div>
                 <div className={style.cardMainContainer}>
                   <MatchCards matches={data?.data?.completed} />
                 </div>

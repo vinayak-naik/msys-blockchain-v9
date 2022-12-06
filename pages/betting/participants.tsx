@@ -53,89 +53,91 @@ const Participants = () => {
   }, [query.id, page]); // eslint-disable-line
   if (participants.length)
     return (
-      <div className={style.container}>
+      <>
         <HeaderComponent />
-        <div className={style.innerContainer}>
-          <div>
-            <Paper sx={paper}>
-              <div className={style.headBox}>
-                Team {query.name} Participants
-              </div>
-            </Paper>
-            <TableContainer component={Paper} sx={paper}>
-              <Table aria-label="simple table">
-                <TableHead>
-                  <TableRow>
-                    <TableCell sx={sx.tableCell}>Sl&nbsp;No.</TableCell>
-                    <TableCell sx={sx.tableCell}>Wallet Address</TableCell>
-                    <TableCell sx={sx.tableCell}>Paid Amount</TableCell>
-                    <TableCell sx={sx.tableCell}>Bet Amount</TableCell>
-                    <TableCell sx={sx.tableCell}>Fees</TableCell>
-                    <TableCell sx={sx.tableCell}>profit</TableCell>
-                    <TableCell sx={sx.tableCell}>Total Amount(%)</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {participants.map((item: any, index: number) => (
-                    <TableRow
-                      key={index}
-                      sx={{
-                        "&:last-child td, &:last-child th": { border: 0 },
-                        "&:hover": {
-                          backgroundColor: "#082c05",
-                        },
-                      }}
-                    >
-                      <TableCell sx={sx.tableCell}>{index + 1}</TableCell>
-                      <TableCell sx={sx.tableCell}>
-                        {item.participantAddress}
-                      </TableCell>
-                      <TableCell sx={sx.tableCell}>
-                        {((item.amount * 100) / 99).toFixed(2)}&nbsp;MSCN
-                      </TableCell>
-                      <TableCell sx={sx.tableCell}>
-                        {item.amount}&nbsp;MSCN
-                      </TableCell>
-                      <TableCell sx={sx.tableCell}>
-                        {(item.amount / 99).toFixed(2)}&nbsp;MSCN
-                      </TableCell>
-                      <TableCell sx={sx.tableCell}>
-                        {100 * 0.01}&nbsp;MSCN
-                      </TableCell>
-                      <TableCell sx={sx.tableCell}>
-                        {((item.amount * 100) / total).toFixed(2)}&nbsp;MSCN
-                      </TableCell>
+        <div className={style.container}>
+          <div className={style.innerContainer}>
+            <div>
+              <Paper sx={paper}>
+                <div className={style.headBox}>
+                  Team {query.name} Participants
+                </div>
+              </Paper>
+              <TableContainer component={Paper} sx={paper}>
+                <Table aria-label="simple table">
+                  <TableHead>
+                    <TableRow>
+                      <TableCell sx={sx.tableCell}>Sl&nbsp;No.</TableCell>
+                      <TableCell sx={sx.tableCell}>Wallet Address</TableCell>
+                      <TableCell sx={sx.tableCell}>Paid Amount</TableCell>
+                      <TableCell sx={sx.tableCell}>Bet Amount</TableCell>
+                      <TableCell sx={sx.tableCell}>Fees</TableCell>
+                      <TableCell sx={sx.tableCell}>profit</TableCell>
+                      <TableCell sx={sx.tableCell}>Total Amount(%)</TableCell>
                     </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-            <Paper sx={paper} style={{ marginBottom: "10vh" }}>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <Pagination
-                  color="primary"
-                  sx={{
-                    button: {
-                      color: "white",
-                    },
-                    ".Mui-selected": {
-                      backgroundColor: "#165c21",
-                    },
+                  </TableHead>
+                  <TableBody>
+                    {participants.map((item: any, index: number) => (
+                      <TableRow
+                        key={index}
+                        sx={{
+                          "&:last-child td, &:last-child th": { border: 0 },
+                          "&:hover": {
+                            backgroundColor: "#082c05",
+                          },
+                        }}
+                      >
+                        <TableCell sx={sx.tableCell}>{index + 1}</TableCell>
+                        <TableCell sx={sx.tableCell}>
+                          {item.participantAddress}
+                        </TableCell>
+                        <TableCell sx={sx.tableCell}>
+                          {((item.amount * 100) / 99).toFixed(2)}&nbsp;MSCN
+                        </TableCell>
+                        <TableCell sx={sx.tableCell}>
+                          {item.amount}&nbsp;MSCN
+                        </TableCell>
+                        <TableCell sx={sx.tableCell}>
+                          {(item.amount / 99).toFixed(2)}&nbsp;MSCN
+                        </TableCell>
+                        <TableCell sx={sx.tableCell}>
+                          {100 * 0.01}&nbsp;MSCN
+                        </TableCell>
+                        <TableCell sx={sx.tableCell}>
+                          {((item.amount * 100) / total).toFixed(2)}&nbsp;MSCN
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+              <Paper sx={paper} style={{ marginBottom: "10vh" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
                   }}
-                  count={totalPages}
-                  page={page}
-                  onChange={handleChange}
-                />
-              </div>
-            </Paper>
+                >
+                  <Pagination
+                    color="primary"
+                    sx={{
+                      button: {
+                        color: "white",
+                      },
+                      ".Mui-selected": {
+                        backgroundColor: "#165c21",
+                      },
+                    }}
+                    count={totalPages}
+                    page={page}
+                    onChange={handleChange}
+                  />
+                </div>
+              </Paper>
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
   return (
     <div style={styleObj}>

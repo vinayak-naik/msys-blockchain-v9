@@ -48,6 +48,7 @@ export const getLottery = async (lotteryId: any) => {
       length,
       totalAmount,
       totalFees,
+      timestamp: Number(lottery.timestamp),
     };
 
     return {

@@ -1,11 +1,13 @@
 .container {
-  height: 100vh;
+  height: 92vh;
   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 .containerLayer {
-  min-height: 92vh;
+  height: 92vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.296);
+  overflow: auto;
+  padding-bottom: 10vh;
 }
 
 .cardsContainer {
@@ -103,147 +105,3 @@
     height: 54vw;
   }
 }
-/* 
-@media only screen and (max-width: 2300px) {
-  .serviceCard {
-    height: 400px;
-  }
-}
-@media only screen and (max-width: 2200px) {
-  .serviceCard {
-    height: 380px;
-  }
-}
-@media only screen and (max-width: 2100px) {
-  .serviceCard {
-    height: 360px;
-  }
-}
-@media only screen and (max-width: 2000px) {
-  .serviceCard {
-    height: 340px;
-  }
-}
-@media only screen and (max-width: 1900px) {
-  .serviceCard {
-    height: 320px;
-  }
-}
-@media only screen and (max-width: 1800px) {
-  .serviceCard {
-    height: 300px;
-  }
-}
-@media only screen and (max-width: 1700px) {
-  .serviceCard {
-    height: 280px;
-  }
-}
-@media only screen and (max-width: 1600px) {
-  .serviceCard {
-    height: 250px;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  .serviceCard {
-    height: 230px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .serviceCard {
-    height: 210px;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .serviceCard {
-    height: 200px;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .serviceCard {
-    height: 270px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .serviceCard {
-    height: 250px;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .serviceCard {
-    height: 230px;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .serviceCard {
-    height: 210px;
-  }
-  .cardsContainer {
-    padding: 2vh;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .serviceCard {
-    height: 190px;
-  }
-}
-
-
-@media only screen and (max-width: 767px) {
-  .cardsContainer {
-    padding: 0;
-    padding: 2vh 0 8vh;
-  }
-  .container {
-    height: 100%;
-  }
-  .cardsContainer {
-    padding: 2vh 0;
-  }
-  .serviceCard {
-    height: 200px;
-  }
-  .serviceCardLayer:hover::after {
-    content: "";
-  }
-}
-@media only screen and (max-width: 700px) {
-  .serviceCard {
-    height: 170px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .serviceCard {
-    height: 280px;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .serviceCard {
-    height: 260px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .serviceCard {
-    height: 240px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .serviceCard {
-    height: 215px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .serviceCard {
-    height: 180px;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .serviceCard {
-    height: 170px;
-  }
-}
-@media only screen and (max-width: 300px) {
-  .serviceCard {
-    height: 160px;
-  }
-} */

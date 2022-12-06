@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  height: 92vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -10,6 +10,7 @@
   width: 100%;
   max-width: 1400px;
   padding: 10px;
+  overflow: auto;
 }
 .headBox {
   padding: 10px;

@@ -16,18 +16,17 @@
 .articalContainer {
   height: 88vh;
   flex: 1;
-  max-width: 1200px;
+  max-width: 1600px;
   display: flex;
   gap: 10px;
   font-family: "Inter", sans-serif;
+  overflow: auto;
 }
 .leftBox {
-  flex-basis: 35%;
-  padding: 40px 20px 20px;
+  flex-basis: 25%;
 }
 .chapterBox {
   padding: 10px 20px;
-  border: 0.1px solid rgb(202, 202, 202);
   min-height: 100%;
   border-radius: 4px;
 }
@@ -37,6 +36,25 @@
   color: rgb(103, 103, 103);
   line-height: 1.5;
   cursor: pointer;
+}
+.chapterBody {
+  margin-top: 10px;
+  font-weight: 700;
+  color: rgb(103, 103, 103);
+  line-height: 1.5;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.articleName {
+  margin-top: 10px;
+  font-weight: 700;
+  color: rgb(103, 103, 103);
+  line-height: 1.5;
+  font-size: 14px;
+  cursor: pointer;
+}
+.activeArticleName {
+  color: rgb(37, 37, 37);
 }
 .chapterName:hover {
   color: rgb(21, 135, 206);
@@ -68,11 +86,11 @@
   cursor: pointer;
 }
 
-.briefNote {
+.paragraph {
   margin-top: 10px;
   font-weight: 400;
-  color: #666;
-  line-height: 1.5;
+  color: rgb(79, 79, 79);
+  line-height: 1.8;
   font-size: 14px;
   cursor: pointer;
 }
@@ -109,40 +127,53 @@
 .questionBlack {
   color: rgb(182, 182, 182);
 }
-.briefNoteBlack {
+.paragraphBlack {
   color: rgb(175, 173, 173);
 }
 .chapterNameBlack {
   color: rgb(188, 188, 188);
 }
 .chapterNameBlack:hover {
-  color: rgb(21, 135, 206);
+  color: rgb(255, 255, 255);
 }
-.chapterBoxBlack {
-  border: 0.1px solid rgb(43, 43, 43);
+.articleNameBlack {
+  color: rgb(181, 181, 181);
 }
+.articleNameBlack:hover {
+  color: rgb(255, 255, 255);
+}
+.activeArticleNameBlack {
+  color: rgb(236, 236, 236);
+}
+
 /* ======================Media Query======================== */
 
-@media only screen and (max-width: 1000px) {
-  .accordion {
-    flex-basis: 90%;
+@media only screen and (max-width: 1200px) {
+  .leftBox {
+    flex-basis: 30%;
   }
-  .handleClose {
-    flex-basis: 5%;
-  }
-  .rightBox h1 {
-    margin: 30px 0 10px;
+  .chapterBox {
+    padding: 10px 10px;
   }
 }
-@media only screen and (max-width: 767px) {
-  .accordion {
-    flex-basis: 98%;
+@media only screen and (max-width: 920px) {
+  .leftBox {
+    flex-basis: 35%;
   }
-  .handleClose {
-    flex-basis: 1%;
+}
+@media only screen and (max-width: 800px) {
+  .leftBox {
+    flex-basis: 40%;
   }
-
-  .rightBox h1 {
-    margin: 30px 0 0;
+}
+@media only screen and (max-width: 600px) {
+  .articalContainer {
+    flex-direction: column;
+  }
+  .leftBox {
+    flex-basis: auto;
+  }
+  .rightBox {
+    overflow: visible;
   }
 }

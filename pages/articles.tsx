@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
-import style from "../styles/pages/guide.module.css";
-import guides from "../public/static/guides/guides.json";
-import guidesIndex from "../public/static/guides/guide-index.json";
-import { CircularProgress, Switch, Typography } from "@mui/material";
+import style from "../styles/pages/articles.module.css";
+import articles from "../public/static/articles/articles.json";
+import articlesIndex from "../public/static/articles/article-index.json";
+import { CircularProgress, Switch } from "@mui/material";
 import HeaderComponent from "../components/header/header";
 import Image from "next/image";
 
-const Guides = () => {
+const Articles = () => {
   const [theme, setTheme] = useState(true);
-  const [guide, setGuide] = useState<any>(null);
-  const [guideId, setGuideId] = useState(1);
+  const [article, setArticle] = useState<any>(null);
+  const [articleId, setArticleId] = useState(1);
 
   useEffect(() => {
-    const result = guides.find((item) => item.id === Number(guideId));
-    setGuide(result);
-  }, [guideId]);
+    const result = articles.find((item) => item.id === Number(articleId));
+    setArticle(result);
+  }, [articleId]);
 
-  if (guide)
+  if (article)
     return (
       <div className={`${style.container} ${theme && style.containerBlack}`}>
         <HeaderComponent />
@@ -36,7 +36,7 @@ const Guides = () => {
                   theme && style.chapterBoxBlack
                 }`}
               >
-                {guidesIndex.map((item: any) => (
+                {articlesIndex.map((item: any) => (
                   <div key={item.chapterId}>
                     <div
                       className={`${style.chapterName} ${
@@ -50,24 +50,24 @@ const Guides = () => {
                         theme && style.chapterBodyBlack
                       }`}
                     >
-                      {item.guides.map((data: any) => (
-                        <div key={data.guideId}>
+                      {item.articles.map((data: any) => (
+                        <div key={data.articleId}>
                           <div
-                            className={`${style.guideName} 
+                            className={`${style.articleName} 
                           ${
-                            data.guideId === guideId
-                              ? style.activeguideName
+                            data.articleId === articleId
+                              ? style.activeArticleName
                               : ""
                           } 
                           ${
-                            data.guideId === guideId
-                              ? theme && style.activeguideNameBlack
+                            data.articleId === articleId
+                              ? theme && style.activeArticleNameBlack
                               : ""
                           } 
-                          ${theme && style.guideNameBlack} `}
-                            onClick={() => setGuideId(data.guideId)}
+                          ${theme && style.articleNameBlack} `}
+                            onClick={() => setArticleId(data.articleId)}
                           >
-                            {data.guideName}
+                            {data.articleName}
                           </div>
                         </div>
                       ))}
@@ -78,46 +78,28 @@ const Guides = () => {
             </div>
             <div className={style.rightBox}>
               <h1 className={`${style.head} ${theme && style.headBlack}`}>
-                {guide?.title}
+                {article?.title}
               </h1>
-              {guide?.description.map((data: any) => (
+              {article?.description.map((data: any) => (
                 <>
-                  <Typography sx={{ paddingBottom: "10px" }}>
-                    <span
-                      className={`${style.stepTitle} ${
-                        theme && style.stepTitleBlack
-                      }`}
-                    >
-                      {data.stepTitle}
-                    </span>
-                    <div
-                      style={{ paddingBottom: "10px" }}
-                      className={`${style.paragraph} ${
-                        theme && style.paragraphBlack
-                      }`}
-                    >
-                      {data.paragraph}
-                    </div>
-                    {data.link && (
-                      <a
-                        target="blank"
-                        href={data.link}
-                        style={{ color: "#8fbcf3" }}
-                      >
-                        {data.link}
-                      </a>
-                    )}
-                  </Typography>
                   {data.imageUrl !== "" && (
                     <div style={{ margin: "20px" }}>
                       <Image
-                        src={`/static/guides/images/${data.imageUrl}`}
-                        alt="GFG logo served with static path of public directory"
+                        src={`/static/articles/images/${data.imageUrl}`}
+                        alt="image"
                         height={data.imageHeight || 300}
                         width={data.imageWidth || 500}
                       />
                     </div>
                   )}
+                  <div
+                    style={{ paddingBottom: "10px" }}
+                    className={`${style.paragraph} ${
+                      theme && style.paragraphBlack
+                    }`}
+                  >
+                    {data.paragraph}
+                  </div>
                 </>
               ))}
             </div>
@@ -132,7 +114,7 @@ const Guides = () => {
   );
 };
 
-export default Guides;
+export default Articles;
 
 // ================================Objects=============================
 

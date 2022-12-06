@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "What is Ledger?",
+        "description": [
+            {
+                "imageName": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "Ledger by definition is a book of record keeping for all the financial transactions of the organization. In schools and colleges you call it a register."
+            },
+            {
+                "imageName": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "There are two types of ledgers"
+            },
+            {
+                "imageName": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "1.  Centralized ledger, 2. Decentralized ledger"
+            },
+            {
+                "imageName": "centralizedVsDecentralized.png",
+                "imageHeight": 700,
+                "imageWidth": 1200,
+                "paragraph": "Centralized: Most of the Internet applications we use every day are centralized, they are owned by a particular company or person that provision and maintain the source code to execute on a computer, server or maybe even a cluster."
+            },
+            {
+                "imageName": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "Decentralized: Distributed means computation is spread across multiple nodes instead of just one. Decentralized means no node is instructing any other node as to what to do. The code runs on a peer-to-peer network of nodes and no single node has control over the dApp. Depending on the functionality of the dApp, different data structures can be used to store the application data. Bitcoin uses a blockchain decentralized ledger of transactions."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "How blockchain works?",
+        "description": [
+            {
+                "imageName": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "The goal of blockchain is to allow digital information to be recorded and distributed, but not edited. In this way, a blockchain is the foundation for immutable ledgers, or records of transactions that cannot be altered, deleted, or destroyed. This is why blockchains are also known as a distributed ledger technology(DLT)."
+            },
+            {
+                "imageName": "TransactionsBlockchainV2.png",
+                "imageHeight": 700,
+                "imageWidth": 1200,
+                "paragraph": "On 3rd January 2009, the first bitcoin transaction happened, so the very first block in the bitcoin blockchain was known as the Genesis block, from then all the transactions that ever happened on the network were stored in the blockchain in sizes of blocks. Each block stored information on a transaction that happened in the last 10 minutes of creating the blocks."
+            }
+        ]
+    }
+]

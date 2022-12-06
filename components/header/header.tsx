@@ -144,8 +144,8 @@ const Navigation = () => {
       <Link href="/games">
         <div className={style.navItem}>Games</div>
       </Link>
-      <Link href="/article">
-        <div className={style.navItem}>Article</div>
+      <Link href="/articles">
+        <div className={style.navItem}>Articles</div>
       </Link>
       <Link href="/guide">
         <div className={style.navItem}>Guide</div>
@@ -249,8 +249,8 @@ const Drawer = (props: any) => {
               <Link href="/games">
                 <div className={style.sideNavItem}>Games</div>
               </Link>
-              <Link href="/article">
-                <div className={style.sideNavItem}>Article</div>
+              <Link href="/articles">
+                <div className={style.sideNavItem}>Articles</div>
               </Link>
               <Link href="/about">
                 <div className={style.sideNavItem}>About Us</div>

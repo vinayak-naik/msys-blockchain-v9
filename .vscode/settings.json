@@ -6,5 +6,8 @@
     "source.fixAll.eslint": true,
     "source.fixAll.format": true
   },
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
