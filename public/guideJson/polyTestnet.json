@@ -1,0 +1,49 @@
+{
+    "title": "How to Add Polygon testnet in Metamask browser extension?",
+    "id": 2,
+    "description": [
+        {
+            "stepTitle": "Step - 1:",
+            "imageUrl": "testnet0.png",
+            "imageHeight": 400,
+            "imageWidth": 700,
+            "paragraph": "Go to",
+            "link": "https://chainlist.org/"
+          },
+          {
+            "stepTitle": "Step - 2:",
+            "imageUrl": "testnet1.png",
+            "imageHeight": 400,
+            "imageWidth": 700,
+            "paragraph": "Click the 'Testnets' toggle button to see all test networks."
+          },
+          {
+            "stepTitle": "Step - 3:",
+            "imageUrl": "testnet2.png",
+            "imageHeight": 400,
+            "imageWidth": 700,
+            "paragraph": "Type 'mumbai' on search input field, Click 'Connect Wallet' button on Mumbai testnet, Then give permission to Metamask."
+          },
+          {
+            "stepTitle": "Step - 4:",
+            "imageUrl": "testnet3.png",
+            "imageHeight": 400,
+            "imageWidth": 700,
+            "paragraph": "Click the 'Add to Metamask' button to add testnet to Metamask"
+          },
+          {
+            "stepTitle": "Step - 5:",
+            "imageUrl": "testnet4.png",
+            "imageHeight": 400,
+            "imageWidth": 700,
+            "paragraph": "Now you can see 'Mumbai' testnet on Metamask page"
+          },
+          {
+            "stepTitle": "",
+            "imageUrl": "",
+            "imageHeight": 400,
+            "imageWidth": 700,
+            "paragraph": "Done"
+          }
+    ]
+}

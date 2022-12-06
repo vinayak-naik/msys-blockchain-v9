@@ -1,0 +1,120 @@
+.container {
+  /* background-image: url("../../public/static/img/lotterybg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  height: 100vh;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  overflow: auto;
+}
+.innerContainer {
+  padding: 1.5vw 1.5vw 0;
+  display: flex;
+  gap: 1vw;
+  flex-direction: column;
+  min-height: 92vh;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+.matchDetails {
+  display: flex;
+}
+.textBoxContainer {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+.textBox {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-direction: column;
+}
+.textContainer {
+  display: flex;
+}
+.textHead {
+  font-weight: bold;
+  padding-right: 10px;
+  font-size: 14px;
+}
+.text {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.statusButton {
+  background-color: rgba(54, 161, 46, 0.589);
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 8px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+.statusButton:hover {
+  background-color: rgba(40, 197, 29, 0.589);
+}
+.participantsLink {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: rgb(81, 81, 81);
+  cursor: pointer;
+}
+
+.lotteryNamePaper {
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.loadingBox {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======================Media Query======================== */
+
+@media only screen and (max-width: 1050px) {
+  .textBox {
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .textBox {
+    padding: 10px 5px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .matchDetails {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .textBoxContainer {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 10px;
+  }
+}
+
+/* @media only screen and (max-width: 820px) {
+  .textBoxContainer {
+    padding: 0 10px;
+  }
+  .matchDetails {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .textBoxContainer {
+    flex-direction: column;
+  }
+} */

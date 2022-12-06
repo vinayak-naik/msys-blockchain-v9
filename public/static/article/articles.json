@@ -1,0 +1,221 @@
+[
+  {
+    "title": "What is Blockchain?",
+    "briefNote": "Blockchain is an ever-growing ledger that keeps a permanent record of transactions that took place on the network in a secure and chronological order, and cannot be changed or tampered with. Blockchains are best known for their crucial role in cryptocurrency systems, such as Bitcoin for maintaining a secure and decentralized record of transactions.",
+    "id": 1,
+    "description": [
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Blockchain is an ever-growing ledger that keeps a permanent record of transactions that took place on the network in a secure and chronological order, and cannot be changed or tampered with. Blockchains are best known for their crucial role in cryptocurrency systems, such as Bitcoin for maintaining a secure and decentralized record of transactions.The difference between a typical database and a blockchain is how the data is structured.In blockchain data is stored in the form of blocks, hence the name is Blockchain."
+      },
+      {
+        "imageUrl": "blockchain.png",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Data is stored in chronological order. The first block is known as the Genesis block where the root information is stored. Second block will have transaction hash and previous block hash to link the details. Data in blockchain is immutable.."
+      }
+    ]
+  },
+  {
+    "title": "What is Ledger?",
+    "briefNote": "Ledger by definition is a book of record keeping for all the financial transactions of the organization. In schools and colleges you call it a register. Centralized: Most of the Internet applications we use every day are centralized, they are owned by a particular company or person that provision and maintain the source code to execute on a computer, server or maybe even a cluster.",
+    "id": 2,
+    "description": [
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Ledger by definition is a book of record keeping for all the financial transactions of the organization. In schools and colleges you call it a register."
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "There are two types of ledgers"
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "1.  Centralized ledger, 2. Decentralized ledger"
+      },
+      {
+        "imageUrl": "centralizedVsDecentralized.png",
+        "imageHeight": 700,
+        "imageWidth": 1200,
+        "paragraph": "Centralized: Most of the Internet applications we use every day are centralized, they are owned by a particular company or person that provision and maintain the source code to execute on a computer, server or maybe even a cluster."
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Decentralized: Distributed means computation is spread across multiple nodes instead of just one. Decentralized means no node is instructing any other node as to what to do. The code runs on a peer-to-peer network of nodes and no single node has control over the dApp. Depending on the functionality of the dApp, different data structures can be used to store the application data. Bitcoin uses a blockchain decentralized ledger of transactions."
+      }
+    ]
+  },
+  {
+    "title": "How blockchain works?",
+    "briefNote": "The goal of blockchain is to allow digital information to be recorded and distributed, but not edited. In this way, a blockchain is the foundation for immutable ledgers, or records of transactions that cannot be altered, deleted, or destroyed.",
+    "id": 3,
+    "description": [
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "The goal of blockchain is to allow digital information to be recorded and distributed, but not edited. In this way, a blockchain is the foundation for immutable ledgers, or records of transactions that cannot be altered, deleted, or destroyed. This is why blockchains are also known as a distributed ledger technology(DLT)."
+      },
+      {
+        "imageUrl": "TransactionsBlockchainV2.png",
+        "imageHeight": 700,
+        "imageWidth": 1200,
+        "paragraph": "On 3rd January 2009, the first bitcoin transaction happened, so the very first block in the bitcoin blockchain was known as the Genesis block, from then all the transactions that ever happened on the network were stored in the blockchain in sizes of blocks. Each block stored information on a transaction that happened in the last 10 minutes of creating the blocks."
+      }
+    ]
+  },
+  {
+    "title": "Where blockchain ledger stored?",
+    "briefNote": "Blockchain is decentralized hence, there is no central place for storing it. That's why it is stored in computers or systems all across the network. These systems or computers are known as nodes. Each of the nodes has one copy of the blockchain or in other words, the transactions that are done on the network.",
+    "id": 4,
+    "description": [
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Blockchain is decentralized hence, there is no central place for storing it. That's why it is stored in computers or systems all across the network. These systems or computers are known as nodes. Each of the nodes has one copy of the blockchain or in other words, the transactions that are done on the network. So, in a decentralized blockchain, there is no authority that only one person owns the network and is responsible to take decisions or have rights to change the blockchain protocols, All the users who owns the blockchain network will be responsible to take the decisions .That's why the ledger store all across the network, or in nodes."
+      }
+    ]
+  },
+  {
+    "title": "What is Smart Contract?",
+    "briefNote": "A smart contract is an agreement, contract or set of instructions that is deployed on a decentralized blockchain. When we write some code in React js it is called Component. In Blockchain we write code with some functionality it is called smart contract.",
+    "id": 5,
+    "description": [
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "A smart contract is an agreement, contract or set of instructions that is deployed on a decentralized blockchain. When we write some code in React js it is called Component. In Blockchain we write code with some functionality it is called smart contract. We can write smart contracts in Solidity (known as Blockchain language), Rust (Programming language) and Vyper. After writing smart contract it will be deployed on blockchain, to deploy a smart contract we have to pay some crypto amount, that's why we use crypto wallet like “METAMASK”, it's a crypto wallet we can store our cryptocurrency in it."
+      }
+    ]
+  },
+  {
+    "title": "Why Blockchain?",
+    "briefNote": "Blockchain increases trust, security, transparency and the traceability of data shared across a business network and delivers cost saving with the new efficiency.",
+    "id": 6,
+    "description": [
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Blockchain increases trust, security, transparency and the traceability of data shared across a business network and delivers cost saving with the new efficiency."
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Benefits of blockchain:  "
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "It is an immutable public digital ledger, which means when a transaction is recorded, it can not be modified. Due to the encryption feature, Blockchain is always secure. The transactions are done instantly and transparently, as the ledger is updated automatically. As it is a decentralized system, no intermediary fee is required. The authenticity of a transaction is verified and confirmed by participants. "
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Difference between Blockchain and a Traditional Database :  "
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Database: Generally a database is a data structure which is used for storing information. It is an organized collection or storage of data which is able to store new data or access existing data. The data stored in a database can be organized using a database management system. The database administrator can modify the data stored in the database. A database is implemented using the client-server network architecture. "
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Blockchain: A blockchain is a growing list of records, called blocks, that are linked using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. Here, modification of data is not permissible by design. It allows decentralized control and eliminates the risks of modification of data by other parties with sufficient access to the system."
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Key differences between Blockchain and a Database are: "
+      },
+      {
+        "imageUrl": "TraditionalvsBlockchain.png",
+        "imageHeight": 700,
+        "imageWidth": 1200,
+        "paragraph": ""
+      }
+    ]
+  },
+  {
+    "title": "CryptoCurrency?",
+    "briefNote": "Cryptocurrency, sometimes called crypto-currency or crypto, is any form of currency that exists digitally or virtually and uses cryptography to secure transactions. Cryptocurrencies don't have a central issuing or regulating authority, instead using a decentralized system to record transactions and issue new units.",
+    "id": 7,
+    "description": [
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Cryptocurrency, sometimes called crypto-currency or crypto, is any form of currency that exists digitally or virtually and uses cryptography to secure transactions. Cryptocurrencies don't have a central issuing or regulating authority, instead using a decentralized system to record transactions and issue new units. The most popular cryptocurrencies, by market capitalization, are Bitcoin, Ethereum, Bitcoin Cash and Litecoin. "
+      }
+    ]
+  },
+  {
+    "title": "Traditional Currencies vs. Cryptocurrencies?",
+    "briefNote": "Traditional currencies are managed in a centralized hub-and-spoke system, while many cryptocurrencies operate in a decentralized structure with no intermediaries.",
+    "id": 8,
+    "description": [
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Traditional currencies are managed in a centralized hub-and-spoke system, while many cryptocurrencies operate in a decentralized structure with no intermediaries. A key difference between bitcoin and traditional fiat currencies is that while fiat currencies are legal tender that are backed by a government and controlled by a central bank, bitcoin is a distributed global currency that is not controlled by any centralized entity and its supply automatically increases at a predetermined rate."
+      }
+    ]
+  },
+  {
+    "title": "Private Blockchain vs. Public Blockchain?",
+    "briefNote": "Public Blockchain: A public blockchain is one where anyone is free to join and participate in the core activities of the blockchain network. Anyone can read, write, and audit the ongoing activities on a public blockchain network, which helps achieve the self-governed, decentralized nature often touted when blockchain is discussed.",
+    "id": 9,
+    "description": [
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Public Blockchain: A public blockchain is one where anyone is free to join and participate in the core activities of the blockchain network. Anyone can read, write, and audit the ongoing activities on a public blockchain network, which helps achieve the self-governed, decentralized nature often touted when blockchain is discussed."
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Advantages: A public network operates on an incentivizing scheme that encourages new participants to join and keep the network agile. Public blockchains offer a particularly valuable solution from the point of view of a truly decentralized, democratized, and authority-free operation."
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": " Private Blockchain: Participants can join a private blockchain network only through an invitation where their identity or other required information is authentic and verified. The validation is done by the network operator(s) or by a clearly defined set protocol implemented by the network through smart contracts or other automated approval methods. Private blockchains control who is allowed to participate in the network. If the network is capable of mining, its private nature could control which users can execute the consensus protocol that decides the mining rights and rewards. Additionally, only select users might maintain the shared ledger. The owner or operator has the right to override, edit, or delete the necessary entries on the blockchain as required or as they see fit."
+      },
+      {
+        "imageUrl": "",
+        "imageHeight": "",
+        "imageWidth": "",
+        "paragraph": "Advantages: A private blockchain is not decentralized. It is a distributed ledger that operates as a closed database secured with cryptographic concepts and the organization's needs. Only those with permission can run a full node, make transactions, or validate/authenticate the blockchain changes. By reducing the focus on protecting user identities and promoting transparency, private blockchains prioritize efficiency and immutability—the state of not being able to be changed. These are important features in supply, logistics, payroll, finances, accounting, and many other enterprise and business areas."
+      },
+      {
+        "imageUrl": "publicVsPrivate.png",
+        "imageHeight": 700,
+        "imageWidth": 1200,
+        "paragraph": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,151 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  color: rgb(223, 223, 223);
+}
+.containerLayer {
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  min-height: 92vh;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+.leftBox {
+  padding: 20px;
+  flex-basis: 400px;
+  border-radius: 4px;
+  border: 0.1px solid rgb(96, 106, 156);
+  display: flex;
+  flex-direction: column;
+}
+.rightBox {
+  padding: 20px;
+  flex: 1;
+  border-radius: 4px;
+  border: 0.1px solid rgb(89, 89, 156);
+}
+.imageContainer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageBox {
+  height: 100%;
+  width: 200px;
+  border-radius: 50%;
+}
+.detailsContainer {
+  padding: 10px;
+  /* background-color: red; */
+}
+.userDetails {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.userName {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(229, 222, 214);
+}
+.userEmail {
+  /* font-size: 20px; */
+}
+.userWalletAddress {
+  margin-top: 5px;
+  background-color: #333363;
+  padding: 5px 10px 5px 15px;
+  border: 1px solid #4b4b94;
+  border-radius: px;
+}
+.accountDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(63, 67, 87);
+  padding: 5px;
+}
+.signOutButtonBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.buttonBox button {
+  color: rgb(203, 203, 203);
+}
+.balance {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.headContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.loadingPage {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 200px;
+}
+/* ============ INPUT ============ */
+
+.inputContainer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.inputContainer input {
+  width: 300px;
+  height: 40px;
+  border-radius: 8px;
+  padding-left: 10px;
+  color: rgb(15, 118, 30);
+  font-weight: bold;
+  outline: none;
+  font-size: 20px;
+}
+
+.errorMessage {
+  padding: 5px;
+  color: red;
+  font-size: 14px;
+}
+
+/* ======================Media Query======================== */
+
+@media only screen and (max-width: 770px) {
+  .containerLayer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .containerLayer {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .containerLayer {
+    padding: 5px;
+  }
+}

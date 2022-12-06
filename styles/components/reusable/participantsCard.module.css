@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.433);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 0, 0, 0.619);
+  color: white;
+  margin-top: 10px;
+}
+.progressBox {
+  width: 75px;
+  padding: 1vw;
+}
+.tooltip {
+  cursor: pointer;
+  display: inline;
+  font-size: 14px;
+}
+.participantAddress {
+  font-size: 14px;
+  margin: 6px 0;
+}

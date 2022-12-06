@@ -1,0 +1,186 @@
+.container {
+  height: 100vh;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+.innerContainer {
+  padding: 1.5vw 1.5vw 0;
+  display: flex;
+  gap: 1.5vw;
+  flex-direction: column;
+  height: 92vh;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: auto;
+}
+.matchDetails {
+  display: flex;
+  flex-wrap: wrap;
+}
+.textBoxContainer {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+.teamContainer {
+  display: flex;
+  gap: 1vw;
+  flex-direction: column;
+  flex: 1;
+}
+.teamsContainer {
+  display: flex;
+  gap: 12vw;
+}
+.titleBoxNormal {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  color: rgb(237, 237, 237);
+}
+.titleBoxWon {
+  background-color: green;
+  color: rgb(237, 237, 237);
+}
+.titleBoxDefeat {
+  background-color: red;
+  color: rgb(233, 233, 233);
+}
+.progressContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-image: linear-gradient(to right, #1c1c30, #25214db5, #1a1a2c);
+}
+.teamDetails {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.teamDetailsLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.teamDetailsRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.textBox {
+  display: flex;
+  gap: 20px;
+  padding: 20px 2vw;
+  flex-direction: column;
+}
+.textContainer {
+  display: flex;
+}
+.textHead {
+  font-weight: bold;
+  padding-right: 10px;
+  font-size: 14px;
+  color: rgb(214, 214, 214);
+}
+.text {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: rgb(213, 213, 213);
+}
+
+.statusButton {
+  background-color: rgba(54, 161, 46, 0.589);
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 8px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+.statusButton:hover {
+  background-color: rgba(40, 197, 29, 0.589);
+}
+.participantsLink {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+}
+.participateButton {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(227, 227, 227);
+}
+
+.loadingBox {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teamDetailsTopMargin {
+  margin: 30px 0;
+  border: 1px solid green;
+  padding: 2px;
+  display: none;
+}
+.teamDetailsBottomMargin {
+  margin: 40px 0;
+  display: none;
+}
+
+/* ======================Media Query======================== */
+
+@media only screen and (max-width: 1100px) {
+  .teamsContainer {
+    gap: 5px;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .teamsContainer {
+    flex-direction: column;
+    padding: 0 10vw;
+  }
+  .teamDetailsTopMargin,
+  .teamDetailsBottomMargin {
+    display: flex;
+  }
+  .teamsContainer {
+    padding-bottom: 5vh;
+  }
+  .teamContainer {
+    margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .teamsContainer {
+    padding: 0;
+    padding-bottom: 10vh;
+  }
+  .textBoxContainer {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .teamDetails {
+    flex-direction: column;
+  }
+  .textHead {
+    padding-right: 4px;
+  }
+  .textBoxContainer {
+    gap: 10px;
+  }
+}

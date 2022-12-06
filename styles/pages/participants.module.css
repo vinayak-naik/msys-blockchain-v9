@@ -1,0 +1,23 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+.innerContainer {
+  height: 92vh;
+  width: 100%;
+  max-width: 1400px;
+  padding: 10px;
+}
+.headBox {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(215, 215, 215);
+  text-transform: capitalize;
+}

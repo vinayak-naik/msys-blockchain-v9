@@ -1,0 +1,129 @@
+.container {
+  height: 100vh;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+.containerLayer {
+  background-color: rgba(0, 0, 0, 0.341);
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+}
+.innerContainer {
+  padding: 0.5vw 1.5vw 0;
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+  overflow: auto;
+  width: 100%;
+  max-width: 1600px;
+}
+.header {
+  text-align: center;
+  background-color: rgba(41, 110, 40, 0);
+  color: white;
+  padding: 10px;
+}
+.matchHeader {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  color: rgb(15, 66, 111);
+  font-size: large;
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.gridContainer {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* =================Match Card====================== */
+
+.cardMainContainer {
+  width: 100%;
+  height: 74vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.cardContainer {
+  width: 100%;
+  padding: 0 10px;
+  color: rgb(229, 229, 229);
+  text-transform: capitalize;
+}
+.cardInnerContainer {
+  width: 100%;
+  border-radius: 8px;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.229);
+  box-shadow: 1px 2px 4px black;
+  font-size: 15px;
+}
+.cardInnerContainer:hover {
+  background-color: rgba(0, 0, 0, 0.663);
+  box-shadow: 1px 2px 4px rgb(188, 181, 181);
+}
+.cardRow1 {
+  padding: 10px 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+.cardRow2 {
+  padding: 15px 2vw;
+  background-color: rgb(69 70 69 / 79%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 5px;
+}
+.cardTeamName {
+  font-weight: bold;
+  font-size: 16px;
+}
+.vs {
+  font-size: 12px;
+}
+.loadingBox {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noMatchText {
+  color: rgb(155, 155, 155);
+  text-align: center;
+  width: 100%;
+}
+
+/* ======================Media Query======================== */
+
+@media only screen and (max-width: 1000px) {
+  .gridContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cardMainContainer {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .cardInnerContainer:hover {
+    background-color: rgba(0, 0, 0, 0.229);
+    box-shadow: 1px 2px 4px black;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+}

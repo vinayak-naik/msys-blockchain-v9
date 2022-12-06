@@ -1,0 +1,21 @@
+[
+    {
+        "date": "12/02/2022",
+        "lotteryId": "1",
+        "lotteryName": "MSys Lottery 1",
+        "statusCode": 1
+      },
+    {
+        "date": "12/02/2022",
+        "lotteryId": "1",
+        "lotteryName": "MSys Lottery 1",
+        "statusCode": 2
+      },
+    {
+        "date": "12/02/2022",
+        "lotteryId": "1",
+        "lotteryName": "MSys Lottery 1",
+        "statusCode": 3
+      }
+
+]

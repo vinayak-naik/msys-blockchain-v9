@@ -1,0 +1,142 @@
+.headerContainer {
+  height: 8vh;
+  background-color: rgb(1 18 24);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* box-shadow: 1px 1px 5px rgb(73, 73, 73); */
+  border-bottom: 0.1px solid rgb(90, 89, 89);
+}
+.leftBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 10px;
+}
+.appNameBox {
+  padding: 5px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+.appName {
+  font-size: 22px;
+  color: rgb(0, 170, 255);
+}
+.rightBox {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.navBox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+}
+.navItem {
+  padding: 2px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  color: rgb(238 228 228);
+}
+
+.navItem:hover {
+  border-top: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(90, 164, 255);
+}
+.authBox {
+  padding: 0 10px;
+}
+.signInButton {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 2px solid rgb(127, 8, 163);
+}
+.hambergerMenu {
+  color: rgb(255, 255, 255);
+  display: none;
+}
+.userImageBox {
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* ===================Drawer====================== */
+
+.drawerContainer {
+  height: 100vh;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.253);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.drawerContainerActive {
+  width: 100%;
+}
+.drawer {
+  height: 100vh;
+  width: 0;
+  background-color: rgb(0, 0, 0);
+  transition: width 0.5s;
+  border-right: 1px solid rgb(56, 56, 56);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drawerActive {
+  width: 70vw;
+}
+.sideNavContainer {
+  border-top: 1px solid rgb(48, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.sideNavLogo {
+  color: rgb(0, 153, 255);
+  cursor: pointer;
+  height: 10vh;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sideNavItem {
+  color: rgb(238, 228, 228);
+  padding: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid rgb(48, 44, 44);
+  width: 100%;
+  text-align: center;
+}
+
+/* ======================Media Query======================== */
+
+@media only screen and (max-width: 700px) {
+  .rightBox {
+    display: none;
+  }
+  .hambergerMenu {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .sideNavLogo {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .appName {
+    font-size: 18px;
+  }
+}

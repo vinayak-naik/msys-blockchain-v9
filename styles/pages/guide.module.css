@@ -1,0 +1,43 @@
+.container {
+  height: 100vh;
+  background-color: rgb(33, 33, 97);
+}
+.containerLayer {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(43, 40, 40, 0.625);
+  display: flex;
+  padding-top: 2vh;
+  /* padding-bottom: 100px; */
+}
+.accordion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 80%;
+  overflow: auto;
+  padding-top: 20px;
+}
+.handleClose {
+  flex-basis: 10%;
+}
+
+/* ======================Media Query======================== */
+
+@media only screen and (max-width: 1000px) {
+  .accordion {
+    flex-basis: 90%;
+  }
+  .handleClose {
+    flex-basis: 5%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .accordion {
+    flex-basis: 98%;
+  }
+  .handleClose {
+    flex-basis: 1%;
+  }
+}
