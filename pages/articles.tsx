@@ -29,7 +29,7 @@ const Articles = () => {
             />
             {theme && <div className={style.switchLabel}>Dark</div>}
           </div>
-          <div className={style.articalContainer}>
+          <div className={style.articlesContainer}>
             <div className={style.leftBox}>
               <div
                 className={`${style.chapterBox} ${

@@ -1,6 +1,6 @@
 [
     {
-        "chapterName": "Blockchain introduction-1",
+        "chapterName": "Blockchain introduction",
         "chapterId": 1,
         "articles": [
             {
@@ -14,7 +14,7 @@
         ]
     },
     {
-        "chapterName": "Blockchain introduction-2",
+        "chapterName": "Basics of Blockchain",
         "chapterId": 2,
         "articles": [
             {
@@ -28,7 +28,7 @@
         ]
     },
     {
-        "chapterName": "Blockchain introduction-3",
+        "chapterName": "Blockchain in Industries part-1",
         "chapterId": 3,
         "articles": [
             {

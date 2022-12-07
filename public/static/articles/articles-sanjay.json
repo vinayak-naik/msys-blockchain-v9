@@ -1,0 +1,287 @@
+[
+    {
+        "id": 1,
+        "name": "What Is a Consensus Mechanism?",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "A consensus mechanism is a method through which a group of individuals can reach a consensus. Blockchain is utilised as an alternative method for network nodes to make decisions without voting in the case of blockchain. Voting is the most popular mechanism for achieving consensus, and each participant has their own ideas about what should happen and how it should happen. However, compared to other options like proof-of-work, this can take more time and resources. Another option is quorum mining, where action can be taken with the consent of only 51% of miners. However, this also leads to centralization because there aren’t enough nodes that aren’t connected to one another or have been taken over by attackers who may want to have control over the entire mining power itself!"
+               
+               
+            },
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "Below are the most used Consensus Mechanism: "
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Proof Of Work (PoW)",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "PoW is a consensus process where miners protect the network. Receiving new coins in return for their labour encourages miners to protect the network. A block requires a lot of work to mine, but the difficulty can be changed so that new blocks are discovered roughly every 10 minutes."
+            }
+        ]
+    },
+
+    {
+        "id": 3,
+        "name": "Proof Of Stake (PoS)",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "A consensus process called Proof of Investment pays users for their stake in the network. In other words, Dash, NEO, and Ethereum all use it."
+            }
+        ]
+    },
+
+    {
+        "id": 4,
+        "name": "Practical Byzantine Fault Tolerance or PBFT",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "The consensus mechanism known as Practical Byzantine Fault Tolerance (PBFT) uses probabilistic messages to identify the network members who concur on a common state. Shakir Mohamed and Jorge Luis Alves first proposed the PBFT in 2008, and it has since grown to be one of the most popular consensus algorithms for blockchain protocols. Each node in PBFT communicates with its neighbours by sending messages until they agree on the data to be stored in the system. When two nodes dispute, they will exchange messages until they both agree that their points of view are accurate. Until all nodes have come to an understanding or until there is no longer any contention among them regarding any particular issue, this process can go on indefinitely."
+            }
+        ]
+    },
+
+    {
+        "id": 5,
+        "name": "Difference between centralized and decentralized.",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": ""
+            }
+        ]
+    },
+
+    {
+        "id": 6,
+        "name": "What are centralized networks?",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "A centralized network is one in which all the nodes are connected to a single point. This single point is known as the central node, which controls all the communications within the network. This type of network is very efficient regarding communication because all the data travels through the central node. This makes it easy to keep track of everything that’s going on and helps ensure that all the nodes are working together as a team. But there are some drawbacks to using centralized networks. For one, if the central node fails, the whole network fails. And secondly, if someone manages to hack into the central node, they can access all the data passing through it."
+            }
+        ]
+    },
+
+    {
+        "id": 7,
+        "name": "How does a centralized network work?",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "Imagine you’re in a room with a lot of people, and in the middle of the room is a speaker. This speaker is the sole connection node to all the other people in the room and the only one they are meant to hear. That’s basically how a centralized network works. All the data is sent through the central server, and it’s the only way users can access information. This type of network is great for businesses because it allows them to control access to information and keep things organized and streamlined. But, it also has some drawbacks. If the central server goes down, all the users are off the network. And if there’s a data breach, all of the user’s information is exposed. Ownership, in this case, is not subject to the individuals as authority and trust rely upon the central network authority."
+            }
+        ]
+    },
+
+    {
+        "id": 8,
+        "name": "What are decentralized networks?",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "So what are decentralized networks? To cut a long story short, they’re networks where no single point of control exists. That’s in contrast to centralized networks, where a single entity (like Facebook, for example) controls the entire network. With decentralized networks, no central authority decides what content is allowed or who can join the network. This is an important distinction because users on decentralized networks control their data. They’re not at the mercy of a central authority that can choose to delete their account or restrict their access to certain content or functioning."
+            }
+        ]
+    },
+
+    {
+        "id": 9,
+        "name": "How does a decentralized network work?",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "Decentralized networks are also censorship-proof. Governments can’t block access to specific websites because they cannot target one central server. This makes decentralized networks ideal for countries where the government tries to censor the internet. "
+            }
+        ]
+    },
+
+    {
+        "id": 10,
+        "name": "Blockchain Use case: Carbon Credit Market ",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "What does the blockchain have to do with the real-world? What makes it more than just an unusually technical thought experiment? Most importantly, what does it have to do with carbon credits? Blockchains provide two crucial benefits with widespread real-world uses. Blockchains allow the coordination of large groups of disparate users. And, perhaps even more importantly, Blockchains can guarantee ownership."
+            }
+        ]
+    },
+
+    {
+        "id": 11,
+        "name": "The Crypto Carbon Ecosystem ",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "The idea is simple. Carbon offsets are a unit of measure, certifying that a particular action, project, or thing has removed the equivalent of one metric tonne of CO2. One credit = one tonne. The math is simple, but applying it to the real world proves challenging. "
+            },
+
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "Measurement – how do you measure how much CO2 a certain set of actions will remove, before it even does so? This can be especially complicated when you add in living organisms, such as trees, as is teh case for the majority of nature-based offsets. "
+            },
+
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "Verification – even if you can measure things accurately, how do you verify that the set of actions did actually result in a measurable offset? The blockchain can, in theory, help with both of those issues by linking offsets to blockchain- based cryptocurrencies or tokens. The tokens help to incentivise verification, while tokenizing offset projects can ensure accurate measurement. The emerging carbon crypto world is dominated by a number of trends coming together at once. Not all are directly aimed at tokenization. Here are three of the biggest trends that form the crypto carbon ecosystem."
+            }
+        ]
+       
+    },
+
+    {
+        "id": 12,
+        "name": "Trend 1: Carbon-friendly Crypto ",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "The OG cryptocurrency, Bitcoin, employed a Proof-of-Work consensus mechanism. That mechanism is well-known for being energy-intensive and therefore not particularly environmentally friendly. Just how unfriendly? It’s hard to nail down for certain, but studies in 2019 put Bitcoin mining as responsible for 22 million metric tonnes of CO2e, roughly the same amount of CO2 emissions as the Netherlands. A significant amount, for sure. And it’s worth noting that even crypto-friendly news sources place recent emissions for 2020 and 2021 even higher – 36 million tonnes and 41 million tonnes, respectively. However, even the higher numbers pale when compared to global emissions. As a number of outlets noted recently, Bitcoin mining accounted for less than 0.10% of global CO2e. Far less, even, than the CO2e produced by mining and printing traditional fiat currency. Regardless, the idea of “carbon-hungry crypto” has stuck, particularly with Bitcoin. The result has been to push the crypto world towards a more carbon-friendly approach. Sometimes that takes a particularly mundane form, such as Elon Musk dropping Bitcoin payments and then accepting Dogecoin. "
+            }
+        ]
+    },
+
+    {
+        "id": 13,
+        "name": "Trend 2: Tokenized Carbon Offsets ",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "The global market for carbon offsets shows no sign of slowing down, and is projected to be worth billions by the end of the decade. A market growing so fast, and so widespread across the globe, poses unique challenges in verifying and enforcing offsets. Tokenization answers some of those challenges. Non-fungible tokens are by their very nature unique. That allows some crypto carbon projects, like Moss, to issue NFTs for particular projects or even particular pieces of offset projects. The Amazon NFT by Moss is one of many examples; a far splashier one is the Rimba Raya NFT which sold for $70,000. That’s a single carbon offset, for a price exponentially beyond current market value. More down-to-earth NFT offset projects include the much-anticipated Save Planet Earth effort, the first to incorporate industry-leading Gold Standard offset verification into its NFT schemes."
+            }
+        ]
+    },
+
+    {
+        "id": 14,
+        "name": "Trend 3: Blockchain-powered Carbon Exchanges ",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "Carbon NFTs and tokenized offsets are frequently sold on blockchain-powered carbon exchanges. Abu Dhabi reached carbon neutrality by purchasing offsets on AirCarbon Exchange. The exchange offers offsets from around the globe, but tokenizes them on its own exchange. AirCarbon follows the same model as a traditional commodities exchange to facilitate carbon trading. Major crypto exchanges, like Binance, Coinbase, and others, may sell carbon-related tokens without being a dedicated crypto carbon exchange. Some of the biggest crypto carbon projects, like Klima, Toucan, and others, are only available on these centralized exchanges. The crypto world is increasingly aware of the need to be environmentally friendly. That awareness has led to an ecosystem primed to accept ambitious carbon offset NFT projects and tokenized offsets. "
+            }
+        ]
+    },
+
+    {
+        "id": 15,
+        "name": "What is the Metaverse? ",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "The metaverse, in a nutshell, is the digital world, where anything we can imagine can exist. Eventually, we’ll be connected to the metaverse all the time, extending our senses of sight, sound, and touch, blending digital items into the physical world, or popping into fully immersive 3D environments whenever we want. That family of technologies is known collectively as extended Reality (XR). In 1985, Richard Garriott coined the term “avatar” to describe a player’s character in a video game. In his 1992 book, “Snowcrash”, Neal Stephenson imagined an internet-like virtual reality world he called “the metaverse” where users would interact with digital forms of themselves called “avatars”. From Snowcrash, the term “avatar” spread across popular fiction franchises, including Earnest Cline’s “Ready Player One”, which was turned into a popular movie. In “Ready Player One”, a centralized metaverse called the Oasis hosted avatars which could be customized in a variety of ways. Players could purchase items and outfits to use in-game. Those items had real value, and losing them was a big deal. A lot of video game players can relate. We work hard for those in-game rewards, only to discover that at any time, those items can be taken away from us, or their value could be destroyed by some centralized power who controls all of the items, and each item’s capabilities. In the years before Bitcoin exploded as the world’s first viable cryptocurrency, Vitalik Buterin was an avid World of Warcraft player. “Blizzard removed the damage component from my beloved warlock’s Siphon Life spell. I cried myself to sleep, and on that day I realized what horrors centralized services can bring.” ~ Vitalik Buterin That led Vitalik to propose the idea for Ethereum — a decentralized cryptonetwork like the one that backs the Bitcoin cryptocurrency, but a cryptonetwork that could execute arbitrary, Turing- complete programs, called smart contracts. Those smart contracts can do many things. One of those things is to represent a unique digital item, called a Non-Fungible Token (NFT)."
+            }
+        ]
+    },
+
+    {
+        "id": 16,
+        "name": "The Multiverse ",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "Currently, there isn’t one universally interoperable metaverse like the Oasis from Ready Player One. Instead, we have a bunch of different platforms competing for users. The first MMO and open world games, such as World of Warcraft and Second Life began to lay the foundations of the modern 3D multiverse around 2003–2004, but as Vitalik discovered, their economies rely 100% on a single centralized company you must trust to respect the needs of the users, and you can’t take your items and money from one game world to another. Decentraland is a 3D space where you can build virtual worlds, play games, explore museums packed with NFT art, attend live concerts, etc. It works in a standard web browser if you have the MetaMask extension installed to give you access to the cryptocurrency and NFT features. You can buy and sell properties, create and sell virtual art for the art galleries, or build worlds. Several companies have invested in land in Decentraland, and some of them may be willing to pay skilled builders to develop it. Decentraland has even got into the conference space, and has proven that there are interesting opportunities to create unique and creative booth experiences for vendors. 3D scene designers may one day be able to earn a good living designing vendor experiences for metaverse-hosted conferences. There are a variety of playable mini games in Decentraland, and some of them reward you with NFTs that you may be able to sell on OpenSea. Similar platforms like Somnium Space and The Sandbox have also emerged. As far as I’m aware though, you can’t take your Decentraland wearables into The Sandbox."
+            },
+
+            {
+                "imageUrl": "https://miro.medium.com/max/720/1*su9OyMinsajCGtxbmgsUfQ.png",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": ""
+            },
+            {
+                "imageUrl": "https://miro.medium.com/max/720/1*7r_EXrUEl1dJns_Mw_9Lhw.png",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": ""
+            }
+        ]
+    },
+
+    {
+        "id": 17,
+        "name": "Web 3.0 Explained ",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": ""
+            }
+        ]
+    },
+
+    {
+        "id": 18,
+        "name": "What is web 3.0 and why you should care about it ",
+        "description": [
+            {
+                "imageUrl": "",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "To better understand what is Web 3.0 we need to know what is Web 1.0 and 2.0. Not to bore you, here are some simple explanations: Web 1.0 — information only goes from the website to the user. Web 2.0 — information goes both ways. Users interact with the website. Web 3.0 — the great beyond. Information becomes open, decentralized, smart. It interacts with the user and the website or app. Web 3.0 is a decentralized trustless and permissionless network that is able to use Artificial Intelligence and Machine Learning and where the data from its network can be accessed in many places at the same time (ex. Internet of Things). That’s a mouthful of smart words. Below, I’ll offer a simpler explanation. But if you are eager to learn more, check this out."
+            }
+        ]
+    },
+
+    {
+        "id": 19,
+        "name": "Welcome to Web 3.0 ",
+        "description": [
+            {
+                "imageUrl": "https://miro.medium.com/max/720/1*AJIo6qUod6Soxrutlr2ZlA.webp",
+                "imageHeight": "",
+                "imageWidth": "",
+                "paragraph": "Web 3 doesn’t solve all world problems. The internet won’t be decentralized as long as internet providers are under government control. There is still a chance of shutting down the internet with a click of a button. Web 3 is currently considered the decentralized web. Web 2.0 is a centralized web — data is stored in large data centers owned by big centralized businesses. The decentralized web, on the other hand, would spread the data storage and computation needed for websites away from those centralized sources to decentralized networks that would run across all computers running one of these systems. Blockchain technology is of great help here. At the moment, Web 3 is more about making assets digital and allowing ownership of something. Here is a good example. You play the game, spend a lot of time and effort. You acquire rare items.  A company that created that game decides to go out of business or to ban your account for some reason. You lost all your items. The very sad ending of the story. Smart contracts, on the other hand, allow code enforceable contracts. Blockchain allows ownership of digital assets. This is the game-changer for finance. Now those items (assets, NFTs) are located on the blockchain and could be used in many different games and they don’t belong to the company. They belong to you."
+            }
+        ]
+    }
+
+
+
+
+]

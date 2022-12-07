@@ -29,7 +29,7 @@ const Guides = () => {
             />
             {theme && <div className={style.switchLabel}>Dark</div>}
           </div>
-          <div className={style.articalContainer}>
+          <div className={style.guidesContainer}>
             <div className={style.leftBox}>
               <div
                 className={`${style.chapterBox} ${
@@ -56,12 +56,12 @@ const Guides = () => {
                             className={`${style.guideName} 
                           ${
                             data.guideId === guideId
-                              ? style.activeguideName
+                              ? style.activeGuideName
                               : ""
                           } 
                           ${
                             data.guideId === guideId
-                              ? theme && style.activeguideNameBlack
+                              ? theme && style.activeGuideNameBlack
                               : ""
                           } 
                           ${theme && style.guideNameBlack} `}

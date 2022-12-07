@@ -3,6 +3,7 @@ import userABI from "../ABI/user.abi.json";
 import bettingABI from "../ABI/betting.abi.json";
 import lotteryABI from "../ABI/lottery.abi.json";
 import nftABI from "../ABI/nft.abi.json";
+import gameABI from "../ABI/game.abi.json";
 
 const ALCHEMY_URL = process.env.NEXT_PUBLIC_ALCHEMY_URL || "";
 const USER_CONTRACT_ADDRESS =
@@ -64,6 +65,20 @@ export const nftWeb3Methods = async () => {
     // @ts-ignore
     nftABI,
     NFT_CONTRACT_ADDRESS
+  );
+  return myContract.methods;
+};
+// ========================== Game =================================
+
+const GAME_CONTRACT_ADDRESS =
+  process.env.NEXT_PUBLIC_GAME_CONTRACT_ADDRESS || "";
+
+export const gameWeb3Methods = async () => {
+  const web3 = new Web3(new Web3.providers.HttpProvider(ALCHEMY_URL));
+  const myContract = new web3.eth.Contract(
+    // @ts-ignore
+    gameABI,
+    GAME_CONTRACT_ADDRESS
   );
   return myContract.methods;
 };
