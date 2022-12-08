@@ -11,16 +11,20 @@ import {
 } from "@mui/material";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import UserDetailsDialog from "../../components/dialogs/user-details-dialog";
 import HeaderComponent from "../../components/header/header";
 import style from "../../styles/pages/participants.module.css";
 import { getParticipants } from "../../web3-interface/services/betting/get-participants";
 import { getParticipantsLength } from "../../web3-interface/services/betting/get-participants-length";
+import { getUserByAddress } from "../../web3-interface/services/user/get-user-by-address";
 
 const Participants = () => {
   const { query } = useRouter();
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [participants, setParticipants] = useState<any>([]);
+  const [open, setOpen] = useState(false);
+  const [user, setUser] = useState<any>(null);
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
     setPage(value);
   };
@@ -53,6 +57,13 @@ const Participants = () => {
       getParticipantslist();
     }
   }, [query.id, page]); // eslint-disable-line
+
+  const getUser = async (address: string) => {
+    const res = await getUserByAddress(address);
+    if (!res.success) return;
+    setUser(res.data);
+    setOpen(true);
+  };
   if (participants.length)
     return (
       <>
@@ -87,9 +98,10 @@ const Participants = () => {
                         sx={{
                           "&:last-child td, &:last-child th": { border: 0 },
                           "&:hover": {
-                            backgroundColor: "#082c05",
+                            backgroundColor: "rgb(4 65 95)",
                           },
                         }}
+                        onClick={() => getUser(item.participantAddress)}
                       >
                         <TableCell sx={sx.tableCell}>{index + 1}</TableCell>
                         <TableCell sx={sx.tableCell}>
@@ -143,6 +155,11 @@ const Participants = () => {
               </Paper>
             </div>
           </div>
+          <UserDetailsDialog
+            user={user}
+            open={open}
+            handleClose={() => setOpen(false)}
+          />
         </div>
       </>
     );

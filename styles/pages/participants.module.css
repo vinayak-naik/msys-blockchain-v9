@@ -22,3 +22,13 @@
   color: rgb(215, 215, 215);
   text-transform: capitalize;
 }
+.userDetailsDialog > div {
+  display: flex;
+}
+.userDetailsDialog h4 {
+  color: rgb(69, 69, 69);
+}
+.userDetailsDialog span {
+  color: rgb(69, 69, 69);
+  font-size: 14px;
+}
