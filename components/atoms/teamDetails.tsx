@@ -103,6 +103,9 @@ export const TeamDetails = (props: any) => {
         id: matchDetails.matchId,
         name: team === 1 ? matchDetails.team1 : matchDetails.team2,
         team,
+        total: matchDetails.totalAmount,
+        teamTotal: teamDetails.totalAmount,
+        statusCode: matchDetails.statusCode,
       },
     });
   };

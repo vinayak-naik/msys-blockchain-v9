@@ -29,6 +29,8 @@ const Participants = () => {
   const matchId = Number(query.id);
   const team = Number(query.team);
   const total = Number(query.total);
+  const teamTotal = Number(query.teamTotal);
+  const statusCode = Number(query.statusCode);
 
   const getParticipantslist = async () => {
     const totalParticipants = await getParticipantsLength(matchId, team);
@@ -69,10 +71,12 @@ const Participants = () => {
                     <TableRow>
                       <TableCell sx={sx.tableCell}>Sl&nbsp;No.</TableCell>
                       <TableCell sx={sx.tableCell}>Wallet Address</TableCell>
-                      <TableCell sx={sx.tableCell}>Paid Amount</TableCell>
+                      {/* <TableCell sx={sx.tableCell}>Paid Amount</TableCell> */}
                       <TableCell sx={sx.tableCell}>Bet Amount</TableCell>
                       <TableCell sx={sx.tableCell}>Fees</TableCell>
-                      <TableCell sx={sx.tableCell}>profit</TableCell>
+                      <TableCell sx={sx.tableCell}>
+                        {statusCode === 3 ? "Profit" : "Expected Profit"}
+                      </TableCell>
                       <TableCell sx={sx.tableCell}>Total Amount(%)</TableCell>
                     </TableRow>
                   </TableHead>
@@ -91,9 +95,9 @@ const Participants = () => {
                         <TableCell sx={sx.tableCell}>
                           {item.participantAddress}
                         </TableCell>
-                        <TableCell sx={sx.tableCell}>
+                        {/* <TableCell sx={sx.tableCell}>
                           {((item.amount * 100) / 99).toFixed(2)}&nbsp;MSCN
-                        </TableCell>
+                        </TableCell> */}
                         <TableCell sx={sx.tableCell}>
                           {item.amount}&nbsp;MSCN
                         </TableCell>
@@ -101,7 +105,10 @@ const Participants = () => {
                           {(item.amount / 99).toFixed(2)}&nbsp;MSCN
                         </TableCell>
                         <TableCell sx={sx.tableCell}>
-                          {100 * 0.01}&nbsp;MSCN
+                          {((item.amount / teamTotal) * (total + 1000)).toFixed(
+                            2
+                          )}
+                          &nbsp;MSCN
                         </TableCell>
                         <TableCell sx={sx.tableCell}>
                           {((item.amount * 100) / total).toFixed(2)}&nbsp;MSCN
