@@ -13,6 +13,8 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { getLotteryParticipants } from "../../web3-interface/services/lottery/get-participants";
 import { getLotteryParticipantsLength } from "../../web3-interface/services/lottery/get-participants-length";
+import { getUserByAddress } from "../../web3-interface/services/user/get-user-by-address";
+import UserDetailsDialog from "../dialogs/user-details-dialog";
 
 const LotteryParticipants = (props: any) => {
   const { lotteryDetails } = props;
@@ -21,11 +23,20 @@ const LotteryParticipants = (props: any) => {
   const [totalPages, setTotalPages] = useState(1);
   const [noParticipants, setNoParticipants] = useState(false);
   const [participants, setParticipants] = useState<any>([]);
+  const [open, setOpen] = useState(false);
+  const [user, setUser] = useState<any>(null);
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
     setPage(value);
   };
   const count = 7;
   const lotteryId = Number(query.lotteryId);
+
+  const getUser = async (address: string) => {
+    const res = await getUserByAddress(address);
+    if (!res.success) return;
+    setUser(res.data);
+    setOpen(true);
+  };
 
   const getParticipants = async () => {
     const totalParticipants = await getLotteryParticipantsLength(lotteryId);
@@ -76,6 +87,7 @@ const LotteryParticipants = (props: any) => {
                       backgroundColor: "#082c05",
                     },
                   }}
+                  onClick={() => getUser(item)}
                 >
                   <TableCell sx={sx.tableCell}>{index + 1}</TableCell>
                   <TableCell sx={sx.tableCell}>{item}</TableCell>
@@ -116,6 +128,11 @@ const LotteryParticipants = (props: any) => {
             />
           </div>
         </Paper>
+        <UserDetailsDialog
+          user={user}
+          open={open}
+          handleClose={() => setOpen(false)}
+        />
       </div>
     );
   if (noParticipants) return <div style={styleObj}>No Participants</div>;

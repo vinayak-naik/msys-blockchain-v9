@@ -50,7 +50,7 @@ const Articles = () => {
                         theme && style.chapterBodyBlack
                       }`}
                     >
-                      {item.articles.map((data: any) => (
+                      {item.articles.map((data: any, index: any) => (
                         <div key={data.articleId}>
                           <div
                             className={`${style.articleName} 
@@ -67,6 +67,10 @@ const Articles = () => {
                           ${theme && style.articleNameBlack} `}
                             onClick={() => setArticleId(data.articleId)}
                           >
+                            <span style={{ fontWeight: "400" }}>
+                              {item.chapterId}.{index + 1}
+                            </span>
+                            &nbsp;
                             {data.articleName}
                           </div>
                         </div>
