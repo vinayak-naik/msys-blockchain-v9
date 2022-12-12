@@ -173,6 +173,11 @@ const LotteryDetails = (props: any) => {
           setPromptDialog={(e: any) => setPromptDialog(e)}
         />
       </Paper>
+      <Paper sx={paper}>
+        <div className={style.lotteryNamePaper}>
+          <h3>Participants</h3>
+        </div>
+      </Paper>
     </>
   );
 };

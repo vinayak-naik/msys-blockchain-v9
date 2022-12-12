@@ -28,7 +28,7 @@ const Articles = () => {
 
             <div
               style={{ paddingBottom: "10px" }}
-              className={`${style.briefNote} ${theme && style.briefNoteBlack}`}
+              className={`${style.paragraph} ${theme && style.paragraphBlack}`}
             >
               It is a matter of pride, and responsibility to work with clients
               who are defining the future of business operations and customer
@@ -44,7 +44,7 @@ const Articles = () => {
             </h1>
             <div
               style={{ paddingBottom: "10px" }}
-              className={`${style.briefNote} ${theme && style.briefNoteBlack}`}
+              className={`${style.paragraph} ${theme && style.paragraphBlack}`}
             >
               We empower our clients to leapfrog the competition by stitching
               advanced technologies like Big Data Analytics, Artificial

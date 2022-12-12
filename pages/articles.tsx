@@ -1,22 +1,31 @@
 import React, { useEffect, useState } from "react";
 import style from "../styles/pages/articles.module.css";
-import articles from "../public/static/articles/articles.json";
-import articlesIndex from "../public/static/articles/article-index.json";
 import { CircularProgress, Switch } from "@mui/material";
 import HeaderComponent from "../components/header/header";
 import Image from "next/image";
+import { articlesJson } from "../public/static/articles/json";
 
 const Articles = () => {
   const [theme, setTheme] = useState(true);
   const [article, setArticle] = useState<any>(null);
-  const [articleId, setArticleId] = useState(1);
+  const [selectedArticle, setSelectedArticle] = useState({
+    chapterId: 3,
+    articleId: 2,
+  });
 
   useEffect(() => {
-    const result = articles.find((item) => item.id === Number(articleId));
-    setArticle(result);
-  }, [articleId]);
+    const chapter = articlesJson.find(
+      (item) => item.chapterId === Number(selectedArticle.chapterId)
+    );
+    if (!chapter) return;
+    const _article = chapter.chapterBody.find(
+      (item) => item.articleId === Number(selectedArticle.articleId)
+    );
 
-  if (article)
+    setArticle(_article);
+  }, [selectedArticle]);
+
+  if (articlesJson)
     return (
       <div className={`${style.container} ${theme && style.containerBlack}`}>
         <HeaderComponent />
@@ -34,14 +43,29 @@ const Articles = () => {
               <div
                 className={`${style.chapterBox} ${
                   theme && style.chapterBoxBlack
-                }`}
+                } `}
               >
-                {articlesIndex.map((item: any) => (
+                {articlesJson.map((item: any) => (
                   <div key={item.chapterId}>
                     <div
                       className={`${style.chapterName} ${
                         theme && style.chapterNameBlack
-                      }`}
+                      }  ${
+                        item.chapterId === selectedArticle.chapterId
+                          ? style.activeChapterName
+                          : ""
+                      } 
+                      ${
+                        item.chapterId === selectedArticle.chapterId
+                          ? theme && style.activeChapterNameBlack
+                          : ""
+                      } `}
+                      onClick={() =>
+                        setSelectedArticle({
+                          chapterId: item.chapterId,
+                          articleId: 1,
+                        })
+                      }
                     >
                       {item.chapterId}. {item.chapterName}
                     </div>
@@ -50,28 +74,35 @@ const Articles = () => {
                         theme && style.chapterBodyBlack
                       }`}
                     >
-                      {item.articles.map((data: any, index: any) => (
+                      {item.chapterBody.map((data: any, index: any) => (
                         <div key={data.articleId}>
                           <div
-                            className={`${style.articleName} 
+                            className={`${style.articleName}  
                           ${
-                            data.articleId === articleId
+                            item.chapterId === selectedArticle.chapterId &&
+                            data.articleId === selectedArticle.articleId
                               ? style.activeArticleName
                               : ""
                           } 
                           ${
-                            data.articleId === articleId
+                            item.chapterId === selectedArticle.chapterId &&
+                            data.articleId === selectedArticle.articleId
                               ? theme && style.activeArticleNameBlack
                               : ""
                           } 
                           ${theme && style.articleNameBlack} `}
-                            onClick={() => setArticleId(data.articleId)}
+                            onClick={() =>
+                              setSelectedArticle({
+                                chapterId: item.chapterId,
+                                articleId: data.articleId,
+                              })
+                            }
                           >
                             <span style={{ fontWeight: "400" }}>
                               {item.chapterId}.{index + 1}
                             </span>
                             &nbsp;
-                            {data.articleName}
+                            {data.name}
                           </div>
                         </div>
                       ))}
@@ -82,28 +113,37 @@ const Articles = () => {
             </div>
             <div className={style.rightBox}>
               <h1 className={`${style.head} ${theme && style.headBlack}`}>
-                {article?.title}
+                {article?.name}
               </h1>
               {article?.description.map((data: any) => (
                 <>
                   {data.imageUrl !== "" && (
                     <div style={{ margin: "20px" }}>
                       <Image
-                        src={`/static/articles/images/${data.imageUrl}`}
                         alt="image"
                         height={data.imageHeight || 300}
                         width={data.imageWidth || 500}
+                        loader={({ src }: any) => src}
+                        // src={`/static/articles/images/${data.imageUrl}`}
+                        src={data.imageUrl}
                       />
                     </div>
                   )}
-                  <div
-                    style={{ paddingBottom: "10px" }}
-                    className={`${style.paragraph} ${
-                      theme && style.paragraphBlack
-                    }`}
-                  >
-                    {data.paragraph}
-                  </div>
+                  {data.subHeading && (
+                    <h2 className={`${style.head} ${theme && style.headBlack}`}>
+                      {data.subHeading}
+                    </h2>
+                  )}
+                  {data.paragraph && (
+                    <div
+                      style={{ paddingBottom: "10px" }}
+                      className={`${style.paragraph} ${
+                        theme && style.paragraphBlack
+                      }`}
+                    >
+                      {data.paragraph}
+                    </div>
+                  )}
                 </>
               ))}
             </div>

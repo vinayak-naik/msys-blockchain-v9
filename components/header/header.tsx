@@ -252,6 +252,9 @@ const Drawer = (props: any) => {
               <Link href="/articles">
                 <div className={style.sideNavItem}>Articles</div>
               </Link>
+              <Link href="/guide">
+                <div className={style.sideNavItem}>Guide</div>
+              </Link>
               <Link href="/about">
                 <div className={style.sideNavItem}>About Us</div>
               </Link>

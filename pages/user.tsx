@@ -12,9 +12,11 @@ import { getUserByEmail } from "../web3-interface/services/user/get-user-by-emai
 import { getTokenBalance } from "../web3-interface/services/user/get-token-balance";
 import { getMaticBalance } from "../web3-interface/services/user/get-matic-balance";
 import HeaderComponent from "../components/header/header";
+import { useRouter } from "next/router";
 
 const UserProfile = () => {
   const [session]: any = useSession();
+  const { push } = useRouter();
   const [inputAddress, setInputAddress] = useState("");
   const [inputError, setInputError] = useState("");
   const [walletAddress, setWalletAddress] = useState("");
@@ -135,6 +137,12 @@ const UserProfile = () => {
                     <Button variant="outlined" onClick={addWalletHandler}>
                       {loading ? "Processing" : "Add Wallet Address"}
                     </Button>
+                    <div
+                      onClick={() => push("/guide")}
+                      className={style.howToAdd}
+                    >
+                      How to add Wallet Address?
+                    </div>
                   </div>
                 </div>
               ) : (

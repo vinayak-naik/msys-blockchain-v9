@@ -40,8 +40,8 @@ const Lottery = () => {
   if (data && data.success)
     return (
       <>
+        <HeaderComponent />
         <div className={style.container}>
-          <HeaderComponent />
           <div className={style.innerContainer}>
             <LotteryDetails
               openDialog={() => setOpenWinners(true)}

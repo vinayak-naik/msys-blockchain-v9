@@ -1,0 +1,335 @@
+{
+    "chapterName": "Architecture of Web3 application",
+    "chapterId": 4,
+    "chapterBody": [
+        {
+            "name": "Web 2.0 and Web 3.0 applications",
+            "articleId": 1,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "The architecture of Web 3.0 applications (or 'DApps') are completely different from Web 2.0 applications.  Take Medium, for example, a simple blogging site that lets users publish their own content and interact with content from others.  As a web 2.0 application, it may sound simple, but there’s a lot that goes into Medium’s architecture to make it all possible:"
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "First, there must be a place to store essential data, such as users, posts, tags, comments, likes, and so on. This requires a constantly updated database."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Second, backend code (written in a language like Node.js, Java, or Python) must define Medium’s business logic. For example, what happens when a new user signs up, publishes a new blog, or comments on someone else’s blog?"
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Third, frontend code (typically written in JavaScript, HTML, and CSS) must define Medium’s UI logic. For instance, what does the site look like, and what happens when a user interacts with each element on the page?"
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Putting it all together, when you write a blog post on Medium, you interact with its frontend, which talks to its backend, which talks to its database. All of this code is hosted on centralized servers and sent to users through an internet browser. This is a good high-level summary of how most Web 2.0 applications work today."
+                },
+                {
+                    "imageUrl": "https://uploads-ssl.webflow.com/5ddd80927946cdaa0e71d607/614ba7406b5b5f350682ab60_Screen%20Shot%202021-09-22%20at%205.59.02%20PM.png",
+                    "subHeading": "",
+                    "imageHeight": "700",
+                    "imageWidth": "550",
+                    "paragraph": ""
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Blockchain technology has unlocked an exciting new direction for Web 3.0 applications. In this article, we're going to focus on what the Ethereum blockchain brings to the table."
+                }
+            ]
+        },
+        {
+            "name": "What makes Web 3.0 different?",
+            "articleId": 2,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Unlike Web 2.0 applications, Web 3.0 eliminates the middleman. There’s no centralized database that stores the application state, and there’s no centralized web server where the backend logic resides."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Instead, you can leverage blockchain to build apps on a decentralized state machine that’s maintained by anonymous nodes on the internet.By “state machine,” I mean a machine that maintains some given program state and future states allowed on that machine. Blockchains are state machines that are instantiated with some genesis state and have very strict rules (i.e., consensus) that define how that state can transition"
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Better yet, no single entity controls this decentralized state machine — it is collectively maintained by everyone in the network. And what about a backend server? Instead of how Medium’s backend was controlled, in Web 3.0 you can write smart contracts that define the logic of your applications and deploy them onto the decentralized state machine. This means that every person who wants to build a blockchain application deploys their code on this shared state machine."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Here’s what the architecture looks like:"
+                },
+                {
+                    "imageUrl": "https://uploads-ssl.webflow.com/5ddd80927946cdaa0e71d607/614bac9a0ba0027397d0f040_Screen%20Shot%202021-09-22%20at%206.22.07%20PM.png",
+                    "subHeading": "",
+                    "imageHeight": "700",
+                    "imageWidth": "550",
+                    "paragraph": ""
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                }
+            ]
+        },
+        {
+            "name": "A Closer Look on Ethereum Blockchain",
+            "articleId": 3,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "Blockchain",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "The Ethereum blockchain is often touted as a “world computer.”  That’s because it’s a globally accessible, deterministic state machine maintained by a peer-to-peer network of nodes. State changes on this state machine are governed by the rules of consensus that the peers in the network follow.  So, in other words, it’s literally designed to be a state machine that anyone in the world can access and write to. As a result, this machine isn’t owned by any single entity — but collectively by everyone in the network.  One more thing to know: data can only be written to the Ethereum blockchain — you can never update existing data."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Smart contracts",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "A smart contract is a program that runs on the Ethereum blockchain and defines the logic behind the state changes happening on the blockchain. Smart contracts are written in high-level languages, such as Solidity or Vyper."
+                },
+                {
+                    "imageUrl": "https://uploads-ssl.webflow.com/5ddd80927946cdaa0e71d607/614ba942e6034e599f72fd17_Screen%20Shot%202021-09-22%20at%206.07.41%20PM.png",
+                    "subHeading": "",
+                    "imageHeight": "700",
+                    "imageWidth": "600",
+                    "paragraph": "Because smart contract code is stored on the Ethereum blockchain, anyone can inspect the application logic of all smart contracts on the network."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Ethereum Virtual Machine (EVM)",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Up next, you have the Ethereum Virtual Machine, which executes the logic defined in the smart contracts and processes the state changes that happen on this globally accessible state machine.The EVM doesn’t understand high-level languages like Solidity and Vyper, which are used to write smart contracts. Instead, you have to compile the high-level language down into bytecode, which the EVM can then execute."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Front-end",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Finally, we have the frontend. As we mentioned before, it defines the UI logic, but the frontend also communicates with the application logic defined in smart contracts. The communication between the frontend and smart contracts is a little more complicated than it appears in the diagram above. Let’s take a closer look at this next."
+                }
+            ]
+        },
+        {
+            "name": "How Does the Frontend Code Communicate with Smart Contracts on Ethereum?",
+            "articleId": 4,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "We want our frontend to communicate with our smart contracts so that they can invoke functions, but recall that Ethereum is a decentralized network. Every node in the Ethereum network keeps a copy of all states on the Ethereum state machine, including the code and data associated with every smart contract."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "When we want to interact with the data and code on a blockchain, we need to interact with one of these nodes. This is because any node can broadcast a request for a transaction to be executed on the EVM. A miner will then execute the transaction and propagate the resulting state change to the rest of the network."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "There are two ways to broadcast a new transaction:"
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "1. Set up your own node which runs the Ethereum blockchain software"
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "2. Use nodes provided by third-party services like Infura, Alchemy, and Quicknode"
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "If you use a third-party service, you don’t have to deal with all the headaches of running a full node yourself. After all, setting up a new Ethereum node on your own server can take days. (There’s a lot of data to sync — It can even take up more bandwidth and storage than a typical laptop can handle.)"
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Moreover, the cost of storing the full Ethereum blockchain goes up as your DApp scales, and you need to add more nodes to expand your infrastructure. That’s why, as your infrastructure becomes more complex, you’ll need full-time DevOps engineers. They’ll help you maintain the infrastructure to ensure reliable uptime and fast response times."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "All that to say, avoiding these headaches is why many DApps choose to use services like Infura or Alchemy to manage their node infrastructure for them. Of course, there’s a trade-off since this creates a centralized chokepoint, but let’s leave that rabbit hole for another day. ;)"
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Moving on, let’s talk about providers. The nodes that you connect with when you need to interact with the blockchain (whether you set them up yourself or use existing ones from third-party services) are often called “providers.”"
+                },
+                {
+                    "imageUrl": "https://uploads-ssl.webflow.com/5ddd80927946cdaa0e71d607/614baccfeb33fa66b9c2aa7d_Screen%20Shot%202021-09-22%20at%206.22.57%20PM.png",
+                    "subHeading": "",
+                    "imageHeight": "700",
+                    "imageWidth": "550",
+                    "paragraph": ""
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Every Ethereum client (i.e. provider) implements a JSON-RPC specification. This ensures that there’s a uniform set of methods when frontend applications want to interact with the blockchain. If you need a primer on JSON-RPC, it’s a stateless, lightweight remote procedure call (RPC) protocol that defines several data structures and the rules for their processing. It’s transport-agnostic, so the concepts can be used within the same process, over sockets, over HTTP, or in many various message-passing environments. It uses JSON (RFC 4627) as a data format."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Once you connect to the blockchain through a provider, you can read the state stored on the blockchain. But if you want to write to the state, there’s still one more thing you need to do before you can submit the transaction to the blockchain— “sign” the transaction using your private key. For instance, imagine we have a DApp that lets users read or publish blog posts to the blockchain. You might have a button on the frontend that allows anyone to query for the blog posts written by a particular user. (Recall that reading from the blockchain does not require a user to sign a transaction. However, when a user wants to publish a new post onto the chain, our DApp would ask the user to “sign” the transaction using their private key — only then would the DApp relay the transaction to the blockchain. Otherwise, the nodes wouldn’t accept the transaction."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                }
+            ]
+        },
+        {
+            "name": "Signing of transaction with metamask",
+            "articleId": 5,
+            "description": [
+                {
+                    "imageUrl": "https://uploads-ssl.webflow.com/5ddd80927946cdaa0e71d607/614bad03e2f0914f28a324b4_Screen%20Shot%202021-09-22%20at%206.23.49%20PM.png",
+                    "subHeading": "",
+                    "imageHeight": "700",
+                    "imageWidth": "550",
+                    "paragraph": "Metamask is a tool that makes it easy for applications to handle key management and transaction signing. It’s pretty simple: Metamask stores a user’s private keys in the browser, and whenever the frontend needs the user to sign a transaction, it calls Metamask."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Metamask also provides a connection to the blockchain (as a “provider”) since it already has a connection to the nodes provided by Infura since it needs it to sign transactions. In this way, Metamask is both a provider and a signer."
+                }
+            ]
+        },
+        {
+            "name": "Sidechain or Polygon",
+            "articleId": 6,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "One popular scaling solution is Polygon, an L2 scaling solution. Instead of executing transactions on the main blockchain, Polygon has “sidechains” that process and execute transactions. A sidechain is a secondary blockchain that interfaces with the main chain. Every so often, the sidechain submits an aggregation of its recent blocks back to the primary chain."
+                },
+                {
+                    "imageUrl": "https://uploads-ssl.webflow.com/5ddd80927946cdaa0e71d607/614bb0df53dcfec13ea9f668_Screen%20Shot%202021-09-22%20at%206.40.09%20PM.png",
+                    "subHeading": "",
+                    "imageHeight": "500",
+                    "imageWidth": "700",
+                    "paragraph": "Other examples of L2 solutions are Optimistic Rollups and zkRollups. The idea here is similar: We batch transactions off-chain using a “rollup” smart contract and then periodically commit these transactions to the main chain."
+                },
+                {
+                    "imageUrl": "https://uploads-ssl.webflow.com/5ddd80927946cdaa0e71d607/614bb2efff06e818e12a57f2_Screen%20Shot%202021-09-22%20at%206.49.04%20PM.png",
+                    "subHeading": "",
+                    "imageHeight": "700",
+                    "imageWidth": "550",
+                    "paragraph": "The take-home idea is this: L2 solutions do transaction execution (i.e., the slow part) off-chain, with only the transaction data stored on-chain. This lets us scale the blockchain because we don’t have to execute every single transaction on-chain. This also makes transactions faster and cheaper — and they can still communicate with the main Ethereum blockchain when necessary."
+                }
+            ]
+        },
+        {
+            "name": "Cobbling it all together",
+            "articleId": 7,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "If all of this is making your head spin, you’re not alone. Cobbling together all of these tools is complex and can lead to a painful developer experience. But don’t worry — we’re starting to see new developer frameworks which really improve the experience for developers."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "For instance, Hardhat is a developer framework that makes it easier for Ethereum developers to build, deploy, and test their smart contracts. Hardhat offers the “Hardhat Network,” which developers can use to deploy their smart contracts onto a local network — without having to deal with live environments. Better yet, it offers a great plugin ecosystem that makes developers’ lives much easier. Hardhat also provides console.log() functionality, similar to javascript, for debugging purposes. Of course, this is just the beginning. I hope that we continue to see better developer tooling in the future."
+                }
+            ]
+        }
+    ]
+}

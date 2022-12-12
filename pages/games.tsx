@@ -45,7 +45,7 @@ const Services = () => {
                     >
                       <div
                         onClick={() =>
-                          router.push(`${item.active ? item.route : "games"}`)
+                          router.push(`/${item.active ? item.route : "games"}`)
                         }
                         className={style.serviceCard}
                         style={{

@@ -25,6 +25,7 @@
 }
 .leftBox {
   flex-basis: 25%;
+  overflow: auto;
 }
 .chapterBox {
   padding: 10px 20px;
@@ -37,6 +38,10 @@
   color: rgb(103, 103, 103);
   line-height: 1.5;
   cursor: pointer;
+}
+
+.activeChapterName {
+  color: rgb(21, 135, 206);
 }
 .chapterBody {
   margin-top: 10px;
@@ -114,6 +119,9 @@
   gap: 40px;
   margin-top: 100px;
 }
+.head {
+  margin-top: 20px;
+}
 
 /* ======================Black Theme======================== */
 .headBlack {
@@ -135,6 +143,9 @@
   color: rgb(188, 188, 188);
 }
 .chapterNameBlack:hover {
+  color: rgb(11, 178, 228);
+}
+.activeChapterNameBlack {
   color: rgb(11, 178, 228);
 }
 .articleNameBlack {

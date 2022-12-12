@@ -1,0 +1,173 @@
+{
+    "chapterName": "Blockchain in Industries part-1",
+    "chapterId": 3,
+    "chapterBody": [
+        {
+            "articleId": 1,
+            "name": "Blockchain In Fintech ",
+            "description": [
+                {
+                    "imageUrl": "https://appinventiv.com/wp-content/uploads/sites/1/2018/10/inner-image-1.png",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Blockchain distributed ledger technologies have many features to offer emerging financial services. Blockchain is starting to influence internet communications. Networks can transform how things work and are a very close part of the digital technologies that are renovating most industries. Blockchain technology will change the banking and finance sector to a great extent as information technology has enabled peer-to-peer (P2P) communications as well as mass media communications. Blockchain allows the public to send and receive money instantly, securely, and at a low-cost transfer fee for fast transactions without third-party interventions, which reduces or removes the chances of hacking. Digitalization of the banking and financial service is incomplete with other components of the fourth industrial revolution: blockchain networks and financial technology companies' preparation for the digital platform and other services. Digitalized banking services strongly scrutinize old tradition-based business models and processes with faster response times and proficiencies in offering safe and simple payment. "
+                }
+            ]
+        },
+        {
+            "articleId": 2,
+            "name": "Blockchain",
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Blockchain technology is now considered for its impact on banking and financial services in a general context with other industries and sectors. Blockchain technology is decentralized, transparent, anonymous (or pseudonymous), and immutable. Blockchain uses encryption technology to form digital currencies, a favorable new medium of exchange that is safer and better than physical cash. Blockchain is the underlying technology that maintains digital transaction ledgers today. Blockchain technology has found applications in almost across many industries in recent years, from manufacturing to supply chain management to financial services. Blockchain technology has the opportunity to disrupt the financial services sector in various ways. This technology can undeniably reduce issues, disorders, and setbacks in many aspects of financial technology services. We therefore see blockchain as a promising technology to resolve significant problems in the banking and finance sector that have been for many years impeding the industry. "
+                }
+            ]
+        },
+        {
+            "articleId": 3,
+            "name": "DeFI (Decentralized Finance) ",
+            "description": [
+                {
+                    "imageUrl": "https://bap-software.net/wp-content/uploads/2021/06/what-is-defi.jpg",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Decentralized finance (DeFi) is an emerging financial technology that challenges the current centralized banking system. DeFi eliminates the fees that banks and other financial companies charge for using their services and promotes the use of peer-to-peer, or P2P, transactions."
+                }
+            ]
+        },
+        {
+            "articleId": 4,
+            "name": "Decentralized Exchanges ",
+            "description": [
+                {
+                    "imageUrl": "https://www.cryptocompare.com/media/352058/pros-cons.png",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Decentralized exchanges (DEXs) facilitate trading of crypto assets without the use of centralized market making or centralized order books. Exchanges represent the largest category of decentralized financial activity with more than $65 billion locked. Whereas central limit order books match up individual buyers and sellers to execute a trade, DEXs link buyers and sellers to funds held in smart contracts. DEXs typically operate by maintaining crowdsourced collections of cryptocurrencies, called liquidity pools (LPs), which are locked into smart contracts. Each available trading pair on most DEXs requires a unique liquidity pool. Investors, referred to as liquidity providers, deposit equal amounts of two tokens into these liquidity pools to create a market for a given trading pair. Liquidity providers earn “fees” (interest) on their deposits based on the fee rate for the pool and the relative percentage of cryptoassets provided to the pool by the liquidity provider. Users exchange tokens by swapping one asset for another in and out of the liquidity pools. Unlike centralized exchanges, DEXs never take custody of user funds, which is important because some centralized exchanges have been hacked which resulted in a loss of customers’ cryptocurrency lost. DEXs are powered by automated market maker (AMM) protocols that use algorithms to define the price of digital assets in the pools. The most basic and commonly used equation to determine token prices is to have the product of the values of each token in a liquidity pool equal a constant. If users have high demand for one asset and begin to withdraw it, the price of that asset will increase, while the price for the other asset decreases, thus creating an arbitrage opportunity for liquidity providers, and the prices of both assets come back in line with their market prices. "
+                }
+            ]
+        },
+        {
+            "articleId": 5,
+            "name": "CryptoCurrency",
+            "description": [
+                {
+                    "imageUrl": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-25618,resizemode-1,msid-87209465/markets/cryptocurrency/cryptocurrency-is-gaining-worldwide-acceptance-here-are-5-reasons-why.jpg",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Cryptocurrency, an encrypted, peer-to-peer network for facilitating digital barter, is a technology developed eight years ago. Bitcoin, the first and most popular cryptocurrency, is paving the way as a disruptive technology to long standing and unchanged financial payment systems that have been in place for many decades. While cryptocurrencies are not likely to replace traditional fiat currency, they could change the way Internet-connected global markets interact with each other, clearing away barriers surrounding normative national currencies and exchange rates. Technology advances at a rapid rate, and  the  success of  a given  technology is almost  solely dictated by the market upon which it seeks to improve. Cryptocurrencies may revolutionize digital trade markets by creating a free flowing trading system without fees. A SWOT analysis of Bitcoin is presented, which  illuminates some of  the recent events and  movements that could  influence whether Bitcoin contributes to a shift in economic paradigms. "
+                }
+            ]
+        },
+        {
+            "articleId": 6,
+            "name": "Blockchain in Media ",
+            "description": [
+                {
+                    "imageUrl": "https://cdn.hashnode.com/res/hashnode/image/upload/v1646667860647/V7zkHBrwJ.jpg?auto=compress,format&format=webp",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Many of the current problems in media deal with data privacy, royalty payments and piracy of intellectual property. According to a study by Deloitte, the digitization of media has caused widespread sharing of content that infringes on copyrights. Deloitte believes blockchain can give the industry a much needed facelift when it comes to data rights, piracy and payments. "
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Blockchain’s strength in the media industry is its ability to prevent a digital asset, such as an mp3 file, from existing in multiple places. It can be shared and distributed while also preserving ownership, making piracy virtually impossible through a transparent ledger system. Additionally, blockchain can maintain data integrity, allowing advertising agencies to target the right customers, and musicians to receive proper royalties for original works. The following companies are helping grow the popularity of blockchain in our media."
+                },
+                {
+                    "imageUrl": "https://cdn.mos.cms.futurecdn.net/WYsx9YhdWE4WsXNVaDsgoa.jpg",
+                    "subHeading": "'MadHive' App (Blockchain in Social Media)",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "MadHive is a blockchain-based advertising and data solution for digital marketers. The platform tracks, stores and generates reports on customer activity, saving all the data to a private blockchain. MadHive’s targeted audience reports and real-time data monitoring give advertisers insights into their customers without compromising data privacy. "
+                },
+                {
+                    "imageUrl": "https://coincentral.com/wp-content/uploads/2017/11/23960854_10155192055982615_1398797597_o-874x437.png",
+                    "subHeading": "'Steem' App (Blockchain in Social Media)",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Steem is a social media platform backed by blockchain. Its “Proof-of-Brain” community uses tokens as incentives, encouraging people to create original content. The amount of tokens distributed is based on the number of upvotes each article receives. Steem has paid over $50 million in tokens to creators."
+                }
+            ]
+        },
+        {
+            "articleId": 7,
+            "name": "Blockchain in Government ",
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "One of the most surprising applications for blockchain can be in the form of improving government. As mentioned previously, some state governments like Illinois are already using the technology to secure government documents, but blockchain can also improve bureaucratic efficiency, accountability and reduce massive financial burdens. Blockchain has the potential to cut through millions of hours of red tape every year, hold public officials accountable through smart contracts and provide transparency by recording a public record of all activity, according to the New York times. Blockchain may also revolutionize our elections. Blockchain-based voting could improve civic engagement by providing a level of security and incorruptibility that allows voting to be done on mobile devices."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "The following companies and government entities are a few examples of how blockchain applications are improving government. "
+                },
+                {
+                    "imageUrl": "https://mma.prnewswire.com/media/625468/Voatz_Logo.jpg?p=facebook",
+                    "subHeading": "Voatz' App (Blockchain in Government)",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Voatz is a mobile voting platform that runs on blockchain. The encrypted biometric security system makes it secure to vote on a mobile device from anywhere in the world without fear of hacking or data corruption. West Virginia is one of the first states to use the company’s platform to collect votes from eligible service people and travelers abroad during elections."
+                },
+                {
+                    "imageUrl": "https://followmyvote.com/wp-content/uploads/2014/12/End-to-End-Verified-Blockchain-Voting-Follow-My-Vote.jpg",
+                    "subHeading": "Follow My Vote' App (Blockchain in Media)",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Follow My Vote is a secure online voting platform using an open-source virtual blockchain ballot box. The technology decreases spending on physical ballots and can be accessed via any device. Follow My Vote implements the end-to-end tools that elections need in order to provide total safety and confidence in the voting process"
+                }
+            ]
+        },
+        {
+            "articleId": 12,
+            "name": "Blockchain Logistics",
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "A major complaint in the shipping industry is the lack of communication and transparency due to the large number of logistics companies crowding the space. According to a joint study by Accenture and logistics gaint DHL, there are more than 500,000 shipping companies in the US, causing data siloing and transparency issues. The report goes on to say blockchain can solve many of the problems plaguing logistics and supply chain management. The study argues that blockchain enables data transparency by revealing a single source of truth. By acknowledging data sources, blockchain can build greater trust within the industry. The technology can also make the logistics process leaner and more automated, potentially saving the industry billions of dollars a year. Blockchain is not only safe, but a cost-effective solution for the logistics industry. Here are some companies on the cutting-edge of logistics blockchain technology. "
+                },
+                {
+                    "imageUrl": "https://www.globaltranz.com/wp-content/uploads/how-blockchain-works-globaltranz.png",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                },
+                {
+                    "imageUrl": "https://media-exp1.licdn.com/dms/image/C5622AQE9lmaajewGIA/feedshare-shrink_2048_1536/0/1667339227269?e=1672876800&v=beta&t=ngd4449Vc7FtSQDngQAHtUjiouXEuP5lYCly7gYMbJQ",
+                    "subHeading": "'Slync.io' App (Blockchain Logistics) ",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Utilizing blockchain and AI technology, Slync.io’s Logistics Orchestration platform works to provide shipping accountability and insights. Document management, order automation and access to a collaborative business network are all available to streamline logistics operations."
+                },
+                {
+                    "imageUrl": "https://bitcoinexchangeguide.com/wp-content/uploads/2017/11/shipchain.jpg",
+                    "subHeading": "'ShipChain' App (Blockchain Logistics)",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "ShipChain is a fully integrated blockchain system serving the end-to-end shipping process. From the moment the shipment leaves the facility to the time it arrives at its destination, the logistics ecosystem safely tracks and documents every move to create a transparent ledger. Based in Los Angeles, ShipChain is aiming to modernize the $8.1 trillion supply chain market using blockchain. "
+                }
+            ]
+        }
+    ]
+}

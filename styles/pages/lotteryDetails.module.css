@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; */
-  height: 100vh;
+  height: 92vh;
   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   overflow: auto;
 }

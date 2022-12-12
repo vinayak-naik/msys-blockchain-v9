@@ -1,0 +1,161 @@
+{
+    "chapterName": "Blockchain introduction",
+    "chapterId": 1,
+    "chapterBody": [
+        {
+            "name": "What are the benefits blockchain?",
+            "articleId": 1,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Enhanced security",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Your data is sensitive and crucial, and blockchain can significantly change how your critical information is viewed. By creating a record that can’t be altered and is encrypted end-to-end, blockchain helps prevent fraud and unauthorized activity. Privacy issues can also be addressed on blockchain by anonymizing personal data and using permissions to prevent access. Information is stored across a network of computers rather than a single server, making it difficult for hackers to view data."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Greater transparency",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Without blockchain, each organization has to keep a separate database. Because blockchain uses a distributed ledger, transactions and data are recorded identically in multiple locations. All network participants with permissioned access see the same information at the same time, providing full transparency. All transactions are immutability recorded, and are time- and date-stamped. This enables members to view the entire history of a transaction and virtually eliminates any opportunity for fraud."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Instant traceability",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Blockchain creates an audit trail that documents the provenance of an asset at every step on its journey. In industries where consumers are concerned about environmental or human rights issues surrounding a product — or an industry troubled by counterfeiting and fraud — this helps provide the proof. With blockchain, it is possible to share data about provenance directly with customers. Traceability data can also expose weaknesses in any supply chain — where goods might sit on a loading dock awaiting transit."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Increased efficiency and speed",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Traditional paper-heavy processes are time-consuming, prone to human error, and often requires third-party mediation. By streamlining these processes with blockchain, transactions can be completed faster and more efficiently. Documentation can be stored on the blockchain along with transaction details, eliminating the need to exchange paper. There’s no need to reconcile multiple ledgers, so clearing and settlement can be much faster."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Automation",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Transactions can even be automated with “smart contracts,” which increase your efficiency and speed the process even further. Once pre-specified conditions are met, the next step in transaction or process is automatically triggered. Smart contracts reduce human intervention as well as reliance on third parties to verify that terms of a contract have been met. In insurance, for example, once a customer has provided all necessary documentation to file a claim, the claim can automatically be settled and paid."
+                }
+            ]
+        },
+        {
+            "name": "What are smart contracts?",
+            "articleId": 2,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "smart contract automatically enforces a contract between two parties, with a credible digital ledger, all without the need for third parties. Basically, code is injected into the blockchain, and it is automatically enforced without any need for user intervention or third-party verification. For example, with Ethereum smart contracts, the code lives at an address on the Ethereum network and can receive, hold, and release funds. Smart contracts are frequently considered cryptocurrency’s “killer app” because they have the potential to replace traditional contracts."
+                }
+            ]
+        },
+        {
+            "name": "What are smart contracts used for?",
+            "articleId": 3,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Smart contracts have enormous upside potential to be a disruptive industry affecting anyone involved in ledger verification, contracts, or sales. A simple example of the use of a smart contract would be an Airbnb-esque rental agreement enforced by a digital lock. You send the money to my smart contract, and it sends you the door code. The smart contract holds the money in escrow, releasing it to me on the first day of your stay. If you cancel, the terms of the cancellation would be automatically enforced, and the door code would be deleted. This is exactly how Airbnb works now, except a smart contract would eliminate the need for Airbnb to actually hold the funds in escrow. Or, it could eliminate the middle man entirely — Airbnb’s 17% fees."
+                }
+            ]
+        },
+        {
+            "name": "Public vs Private Blockchain vs Permissioned Blockchain",
+            "articleId": 4,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Public Blockchain",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "A public blockchain is one where anyone is free to join and participate in the core activities of the blockchain network. Anyone can read, write, and audit the ongoing activities on a public blockchain network, which helps achieve the self-governed, decentralized nature often touted when blockchain is discussed."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Private Blockchain",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Participants can join a private blockchain network only through an invitation where their identity or other required information is authentic and verified. The validation is done by the network operator(s) or by a clearly defined set protocol implemented by the network through smart contracts or other automated approval methods. Most used by organizations."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "Permissioned Blockchain",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Permissioned blockchains are a mix between the public and private blockchains and support many options for customization."
+                }
+            ]
+        },
+        {
+            "name": "What is NFT?",
+            "articleId": 5,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "NFT means non-fungible tokens (NFTs), which are generally created using the same type of programming used for cryptocurrencies. In simple terms these cryptographic assets are based on blockchain technology. They cannot be exchanged or traded equivalently like other cryptographic assets."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Like Bitcoin or Ethereum. The term NFT clearly represents it can neither be replaced nor interchanged because it has unique properties. Physical currency and cryptocurrency are fungible, which means that they can be traded or exchanged for one another."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "NFT stands for a non-fungible token, which means it can neither be replaced nor interchanged because it has unique properties."
+                },
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "Digital Asset - NFT is a digital asset that represents Internet collectibles like art, music, and games with an authentic certificate created by blockchain technology that underlies Cryptocurrency. Unique - It cannot be forged or otherwise manipulated. Exchange - NFT exchanges take place with cryptocurrencies such as Bitcoin on specialist sites."
+                }
+            ]
+        },
+        {
+            "name": "What is a validator node, Consensus and who pays for the node?",
+            "articleId": 6,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": "A validator node is a type of node that stores a copy of the blockchain’s history and verifies new transactions. public blockchains aren’t controlled by a central server but a group of servers called nodes. Now for decentralization to work, users have to be sure that all network transactions are valid. The more globally distributed these nodes are, the harder it is for an attacker to double spend tokens, reverse transactions, or shut the system down. But requiring a group of servers to process every transaction introduces another problem: How do they all agree on a transaction’s validity? This process is called “achieving consensus.” The original consensus algorithm is Bitcoin’s proof-of-work (PoW). Over the years, however, proof-of-stake (PoS) has come to be the most dominant consensus algorithm in use. When it comes to comparing proof-of-work vs proof-of-stake, PoW requires computers to solve energy-intensive puzzles to confirm transactions, while PoS only requires nodes—better known as validators—to lock up or “stake” tokens as collateral. These validators are, in turn, randomly selected to verify transactions. And to make this system more democratic, most PoS networks let users (i.e. delegators) choose the nodes they want to validate the next block by adding tokens to their staking pools. This way, both validators and delegates share in the network’s block rewards. so in simplest term pays for the node so they can participate in consensus and earn block proposal reward in term of native token of that blockchain."
+                }
+            ]
+        }
+    ]
+}
