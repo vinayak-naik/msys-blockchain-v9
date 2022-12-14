@@ -1,46 +1,76 @@
 {
-    "chapterName": "Technologies behind this application",
+    "chapterName": "Smart Contracts in this application",
     "chapterId": 5,
     "chapterBody": [
         {
-            "name": "Architecture",
+            "name": "Overview",
             "articleId": 1,
             "description": [
                 {
                     "imageUrl": "",
-                    "subHeading": "Frontend(Next.Js)",
-                    "imageHeight": "",
-                    "imageWidth": "",
-                    "paragraph": "Next.js is an open-source web development framework created by Vercel enabling React-based web applications with server-side rendering and generating static websites. React documentation mentions Next.js among 'Recommended Toolchains' advising it to developers as a solution when 'Building a server-rendered website with Node.js'. Where traditional React apps can only render their content in the client-side browser, Next.js extends this functionality to include applications rendered on the server-side."
-                },
-                {
-                    "imageUrl": "",
-                    "subHeading": "Metamask",
-                    "imageHeight": "",
-                    "imageWidth": "",
-                    "paragraph": "MetaMask is a free crypto wallet that is available on both mobile and web platforms. This wallet was introduced to store cryptocurrency and perform trading activities related to it. Moreover, it is specially designed to support Ethereum and Ethereum-based tokens, MetaMask supports signing transactions with Trezor and Ledger hardware wallets. These hardware wallets currently only support signing data using the personal_sign method. If you have trouble logging in to a website or dapp when using a Ledger or Trezor, the site may be requesting you sign data via an unsupported method, in which case we recommend using your standard MetaMask account."
-                },
-                {
-                    "imageUrl": "",
                     "subHeading": "",
                     "imageHeight": "",
                     "imageWidth": "",
-                    "paragraph": "MetaMask wallet is a software crypto wallet designed for keeping cryptocurrency safe and secure. It should be noted that this wallet works for Ethereum and other Ethereum-based tokens. MetaMask is an online digital wallet that allows its users to manage, store and transfer cryptocurrency."
-                },
-                {
-                    "imageUrl": "",
-                    "subHeading": "Polygon",
-                    "imageHeight": "",
-                    "imageWidth": "",
                     "paragraph": ""
-                },
+                }
+            ]
+        },
+        {
+            "name": "User Contract",
+            "articleId": 2,
+            "description": [
                 {
                     "imageUrl": "",
                     "subHeading": "",
                     "imageHeight": "",
                     "imageWidth": "",
                     "paragraph": ""
-                },
+                }
+            ]
+        },
+        {
+            "name": "Betting Contract",
+            "articleId": 3,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                }
+            ]
+        },
+        {
+            "name": "Lottery Contract",
+            "articleId": 4,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                }
+            ]
+        },
+        {
+            "name": "NFT Contract",
+            "articleId": 5,
+            "description": [
+                {
+                    "imageUrl": "",
+                    "subHeading": "",
+                    "imageHeight": "",
+                    "imageWidth": "",
+                    "paragraph": ""
+                }
+            ]
+        },
+        {
+            "name": "Game Contract",
+            "articleId": 6,
+            "description": [
                 {
                     "imageUrl": "",
                     "subHeading": "",
