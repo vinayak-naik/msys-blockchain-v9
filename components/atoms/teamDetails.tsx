@@ -4,8 +4,8 @@ import CircularProgressBar from "../reusable/circularProgressBar";
 import style from "../../styles/pages/matchDetails.module.css";
 import { useRouter } from "next/router";
 import { signIn, useSession } from "next-auth/client";
-import ParticipatePromptDialog from "../dialogs/participate-prompt-dialog";
 import { getUserByEmail } from "../../web3-interface/services/user/get-user-by-email";
+import PromptDialog from "../dialogs/prompt-dialog";
 
 declare var window: any;
 
@@ -73,7 +73,7 @@ export const TeamDetails = (props: any) => {
       setPromptDialog({
         open: true,
         actionName: "go back",
-        message: `${matchDetails.game} is expired at ${matchDetails.date} ${matchDetails.time}`,
+        message: `${matchDetails.game} is no longer active`,
         action: function () {
           back();
         },
@@ -184,7 +184,7 @@ export const TeamDetails = (props: any) => {
           </span>
         </div>
       </Paper>
-      <ParticipatePromptDialog
+      <PromptDialog
         promptDialog={promptDialog}
         setPromptDialog={(e: any) => setPromptDialog(e)}
       />

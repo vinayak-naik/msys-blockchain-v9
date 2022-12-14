@@ -6,20 +6,8 @@ import DialogContentText from "@mui/material/DialogContentText";
 // import { signIn } from "next-auth/client";
 // import { useRouter } from "next/router";
 
-export default function ParticipatePromptDialog(props: any) {
-  // const { push } = useRouter();
+export default function PromptDialog(props: any) {
   const { promptDialog, setPromptDialog } = props;
-  // const promptAction = () => {
-  //   if (promptDialog.action === "login") {
-  //     signIn("google");
-  //   } else if (promptDialog.action === "add wallet address") {
-  //     push("/user");
-  //   } else if (promptDialog.action === "install metamask") {
-  //     push("www.google.com");
-  //   } else {
-  //     null;
-  //   }
-  // };
 
   return (
     <div>

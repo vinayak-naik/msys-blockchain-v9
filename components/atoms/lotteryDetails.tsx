@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import style from "../../styles/pages/lotteryDetails.module.css";
 import { getUserByEmail } from "../../web3-interface/services/user/get-user-by-email";
-import ParticipatePromptDialog from "../dialogs/participate-prompt-dialog";
+import PromptDialog from "../dialogs/prompt-dialog";
 
 declare var window: any;
 
@@ -168,7 +168,7 @@ const LotteryDetails = (props: any) => {
             )}
           </div>
         </div>
-        <ParticipatePromptDialog
+        <PromptDialog
           promptDialog={promptDialog}
           setPromptDialog={(e: any) => setPromptDialog(e)}
         />
