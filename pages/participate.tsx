@@ -230,7 +230,7 @@ const Participate = () => {
                   onClick={participate}
                   endIcon={
                     loading ? (
-                      <CircularProgress size={16} color="inherit" />
+                      <CircularProgress size={12} color="inherit" />
                     ) : null
                   }
                 >

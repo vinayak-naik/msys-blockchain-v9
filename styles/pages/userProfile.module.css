@@ -116,14 +116,14 @@
   gap: 10px;
 }
 .inputContainer input {
-  width: 300px;
+  width: 310px;
   height: 40px;
   border-radius: 8px;
-  padding-left: 10px;
+  padding-left: 5px;
   color: rgb(15, 118, 30);
   font-weight: bold;
   outline: none;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .errorMessage {

@@ -56,6 +56,13 @@ pragma solidity ^0.8.0;
                 require(validAdmin,"Only admins can can call this function");
                 _;
         }
+        
+// ================================ UPDATE-USER-ADMIN ================================================
+
+        function updateUserAdmin(address _address) public onlyAdmin returns (bool) {
+                admin=_address;
+                return true;
+        }
 
 // ============================== OVERRIDE DECIMALS ================================================
 

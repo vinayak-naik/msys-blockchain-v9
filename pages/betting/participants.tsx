@@ -25,6 +25,7 @@ const Participants = () => {
   const [participants, setParticipants] = useState<any>([]);
   const [open, setOpen] = useState(false);
   const [user, setUser] = useState<any>(null);
+  const [noParticipants, setNoParticipants] = useState(false);
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
     setPage(value);
   };
@@ -38,6 +39,11 @@ const Participants = () => {
 
   const getParticipantslist = async () => {
     const totalParticipants = await getParticipantsLength(matchId, team);
+    if (Number(totalParticipants) === 0) {
+      setNoParticipants(true);
+      return;
+    }
+    setNoParticipants(false);
     const pageCount = Math.ceil(Number(totalParticipants) / count);
     setTotalPages(pageCount);
     const from = (page - 1) * count;
@@ -117,13 +123,14 @@ const Participants = () => {
                           {(item.amount / 99).toFixed(2)}&nbsp;MSCN
                         </TableCell>
                         <TableCell sx={sx.tableCell}>
-                          {((item.amount / teamTotal) * (total + 1000)).toFixed(
-                            2
-                          )}
+                          {(
+                            (item.amount / teamTotal) * (total + 1000) -
+                            item.amount
+                          ).toFixed(2)}
                           &nbsp;MSCN
                         </TableCell>
                         <TableCell sx={sx.tableCell}>
-                          {((item.amount * 100) / total).toFixed(2)}&nbsp;MSCN
+                          {((item.amount * 100) / teamTotal).toFixed(2)}%
                         </TableCell>
                       </TableRow>
                     ))}
@@ -164,9 +171,16 @@ const Participants = () => {
       </>
     );
   return (
-    <div style={styleObj}>
-      <CircularProgress color="success" />
-    </div>
+    <>
+      <HeaderComponent />
+      <div style={styleObj}>
+        {noParticipants ? (
+          <div>No Participants</div>
+        ) : (
+          <CircularProgress color="success" />
+        )}
+      </div>
+    </>
   );
 };
 
@@ -180,6 +194,7 @@ const styleObj = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  color: "white",
 };
 
 const sx = {

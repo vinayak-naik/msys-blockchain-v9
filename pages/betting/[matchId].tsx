@@ -98,7 +98,7 @@ export default Match;
 // ================================Objects=============================
 
 const styleObj = {
-  height: "80vh",
+  height: "100vh",
   width: "100%",
   display: "flex",
   justifyContent: "center",

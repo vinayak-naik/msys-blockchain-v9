@@ -2,9 +2,16 @@
     pragma solidity ^0.8.0;
 
 
-// =================================== IMPORTS ================================================
+// =================================== INTERFACE ================================================
 
-    import "./UserContract.sol";
+    interface IUserContract  {
+    function transferMSCNFrom(address messageSender,address owner, uint price) external;
+    function transferMSCN(address participantAddress,uint amount) external;
+    function burnMSCN(address messageSender, uint fees) external;
+    function isUser(address messageSender)  external returns(bool);
+    function mintMSCN(address messageSender, uint amount) external;
+    function addRecords(address sender,uint matchId,uint amount,string memory game,string memory team) external;
+}
 
 // =================================== CONTRACT ================================================
 
@@ -36,7 +43,7 @@
          
 // =================================== VARIABLES ================================================
         
-        UserContract public userContractAddress;
+        IUserContract public userContractAddress;
         Match[] public matches;
         uint[] public bettingAmountArray;
         address public admin;
@@ -52,11 +59,16 @@
             _;
         }
 
-// =================================== VALID USER ================================================
-
         modifier validUser{
             require(userContractAddress.isUser(msg.sender),"Invalid user");
             _;
+        }
+
+// ================================ UPDATE-BETTING-ADMIN ================================================
+
+        function updateBettingAdmin(address _address) public onlyAdmin returns (bool) {
+                admin=_address;
+                return true;
         }
 
 // ================================== VALID MATCH ===============================================
@@ -81,7 +93,7 @@
 // ============================ SET USER CONTRACT ADDRESS ==========================================
 
         function setUserContractAddress(address _userContractAddress) public  onlyAdmin returns(bool){
-            UserContract _UserContract=UserContract(_userContractAddress);
+            IUserContract _UserContract=IUserContract(_userContractAddress);
             userContractAddress=_UserContract;
             return true;
     }

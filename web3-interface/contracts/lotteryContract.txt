@@ -1,11 +1,16 @@
 // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.0;
 
+// =================================== INTERFACE ================================================
 
-// =================================== IMPORTS ================================================
-
-    import "./UserContract.sol";
-
+    interface IUserContract  {
+    function transferMSCNFrom(address messageSender,address owner, uint price) external;
+    function transferMSCN(address participantAddress,uint amount) external;
+    function burnMSCN(address messageSender, uint fees) external;
+    function isUser(address messageSender)  external returns(bool);
+    function mintMSCN(address messageSender, uint amount) external;
+    function addRecords(address sender,uint matchId,uint amount,string memory game,string memory team) external;
+}
 // =================================== CONTRACT ================================================
 
     contract LotteryContract {
@@ -33,7 +38,7 @@
          
 // =================================== VARIABLES ================================================
 
-        UserContract public userContractAddress;
+        IUserContract public userContractAddress;
         Lottery[] public lotteries;
         uint[] public lotteryAmountArray;
         address public admin;
@@ -67,10 +72,17 @@
 // ============================ SET USER CONTRACT ADDRESS ==========================================
 
         function setUserContractAddress(address _userContractAddress) public  onlyAdmin returns(bool){
-            UserContract _UserContract=UserContract(_userContractAddress);
+            IUserContract _UserContract=IUserContract(_userContractAddress);
             userContractAddress=_UserContract;
             return true;
     }
+
+// ================================ UPDATE-LOTTERY-ADMIN ================================================
+
+        function updateLotteryAdmin(address _address) public onlyAdmin returns (bool) {
+                admin=_address;
+                return true;
+        }
 
 // ==================================  ADD LOTTERY =================================================
 

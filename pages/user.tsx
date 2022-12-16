@@ -1,5 +1,5 @@
 import { ContentCopyRounded } from "@mui/icons-material";
-import { Button, IconButton, Tooltip } from "@mui/material";
+import { Button, CircularProgress, IconButton, Tooltip } from "@mui/material";
 import { ethers } from "ethers";
 import { signOut, useSession } from "next-auth/client";
 import Image from "next/image";
@@ -56,6 +56,7 @@ const UserProfile = () => {
     if (!inputAddress) return;
     if (!ethers.utils.isAddress(inputAddress)) {
       setInputError("Invalid Wallet address");
+      return;
     } else {
       setInputError("");
     }
@@ -83,7 +84,7 @@ const UserProfile = () => {
             <div className={style.imageBox}>
               {session?.user?.image && (
                 <Image
-                  alt="img"
+                  alt="Profile Image"
                   loader={({ src }: any) => src}
                   src={session?.user?.image}
                   height="200px"
@@ -134,7 +135,15 @@ const UserProfile = () => {
                     {inputError && (
                       <div className={style.errorMessage}>{inputError}</div>
                     )}
-                    <Button variant="outlined" onClick={addWalletHandler}>
+                    <Button
+                      variant="outlined"
+                      onClick={addWalletHandler}
+                      endIcon={
+                        loading ? (
+                          <CircularProgress size={12} color="inherit" />
+                        ) : null
+                      }
+                    >
                       {loading ? "Processing" : "Add Wallet Address"}
                     </Button>
                     <div
