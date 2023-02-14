@@ -6,11 +6,14 @@ import { lotteryWeb3Methods } from "../../helper/web3Methods";
 
 export const getLotteries = async () => {
   try {
+    console.log("getAllLotteries  running");
     const methods = await lotteryWeb3Methods();
     const result = await methods
       .getAllLotteries()
       .call()
       .catch((err: any) => console.log(err));
+
+    console.log("getAllLotteries======", result);
 
     let upcomming: any = [];
     let active: any = [];

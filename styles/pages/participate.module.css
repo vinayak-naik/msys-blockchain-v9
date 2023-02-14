@@ -24,6 +24,7 @@
 .rightBox h1 {
   color: white;
   margin-top: 20px;
+  font-size: 20px;
   text-transform: capitalize;
 }
 .textContainer span {

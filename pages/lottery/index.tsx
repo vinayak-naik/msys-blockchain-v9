@@ -21,6 +21,7 @@ const MsysLotteries = () => {
     //   setData(response);
     // }
     const response = await getLotteries();
+
     console.log(response);
     setData(response);
   };

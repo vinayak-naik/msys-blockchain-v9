@@ -28,8 +28,8 @@ const NftDetails = () => {
   if (data && data.success)
     return (
       <NftLoadingComponent loading={false}>
+        <HeaderComponent />
         <div className={style.container}>
-          <HeaderComponent />
           <div className={style.containerLeftBox}>
             <NftImage link={nft?.image} />
             <NftImageLink link={nft?.image} />
