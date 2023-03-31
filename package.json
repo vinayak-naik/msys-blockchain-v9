@@ -46,8 +46,8 @@
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "^8.5.0",
-    "husky": "^8.0.2",
-    "prettier": "^2.7.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.6",
     "typescript": "4.7.3"
   }
 }

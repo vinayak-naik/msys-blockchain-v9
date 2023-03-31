@@ -36,7 +36,7 @@ const MsysBetting = () => {
         <HeaderComponent />
         <div className={style.containerLayer}>
           <div className={style.innerContainer}>
-            <h1 className={style.header}>MSys Betting</h1>
+            <h1 className={style.header}>IPL 2023 Matches</h1>
             <div className={style.gridContainer}>
               <div className={style.gridItem}>
                 <div className={style.matchHeader} style={{ color: "#686868" }}>
