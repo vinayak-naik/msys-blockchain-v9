@@ -26,7 +26,7 @@ const MsysBetting = () => {
   };
 
   useEffect(() => {
-    if (!ignore) getAllMatches();
+    if (!ignore) getAllMatches(); //test
     ignore = true; // eslint-disable-line
   }, []); // eslint-disable-line
 
