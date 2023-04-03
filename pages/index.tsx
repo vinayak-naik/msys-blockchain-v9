@@ -27,11 +27,11 @@ const Home: NextPage = () => {
                 technology.
               </p> */}
               <p>
-                Back in July 2022, it was a small idea to kick off Blockchain as
-                a new-age technology at MSys. We quickly approached this and
-                built a small team. Our next goal was to prepare a bunch of
-                Blockchain Proof of Concepts, and as one of the ideas we ended
-                up creating this platform.
+                Back in 2022, it was an initiative to kick off Blockchain as a
+                new-age technology at MSys. We quickly approached this and built
+                a small team. Our next goal was to prepare a bunch of Blockchain
+                Proof of Concepts, and as one of the ideas we ended up creating
+                this platform.
                 <br />
                 <br />
                 Goals of this platform:
@@ -48,13 +48,11 @@ const Home: NextPage = () => {
                 basic to intermediate articles to begin; and will host many
                 more.
                 <br />
-                4. Be a place to explore Blockchain widely and apply it.
+                We have the IPL 2023 ongoing, you can participate in guessing
+                match winners from your favourite teams!!
                 <br />
                 <br />
-                Please participate in our initiative and support us. We have the
-                IPL 2023 ongoing, you can participate in guessing daily winners
-                from your favorite teams, bet the money and win MSys coin as a
-                result, just for fun now :)
+                Please participate in our initiative and support us.
                 <br />
                 Thank you!
                 <br />
