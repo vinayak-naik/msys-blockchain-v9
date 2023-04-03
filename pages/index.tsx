@@ -52,9 +52,9 @@ const Home: NextPage = () => {
                 <br />
                 <br />
                 Please participate in our initiative and support us. We have the
-                FIFA World Cup ongoing, you can participate in guessing daily
-                winners from your favorite teams, bet the money and win MSys
-                coin as a result, just for fun now :)
+                IPL 2023 ongoing, you can participate in guessing daily winners
+                from your favorite teams, bet the money and win MSys coin as a
+                result, just for fun now :)
                 <br />
                 Thank you!
                 <br />
