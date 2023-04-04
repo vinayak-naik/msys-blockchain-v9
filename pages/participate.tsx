@@ -117,36 +117,41 @@ const Participate = () => {
     const result = checkCondition();
     if (!result) return;
     setLoading(true);
-    let data;
-    if (query.type === "1") {
-      const res = await bettingContract
-        .connect(signer)
-        .participate(Number(query.id), Number(query.team), amount);
-      data = await res.wait();
-    } else {
-      const res = await lotteryContract
-        .connect(signer)
-        .participateLottery(Number(query.id));
-      data = await res.wait();
-    }
-    getTokenBalanceHandler();
-    getMaticBalanceHandler();
+    try {
+      let data;
+      if (query.type === "1") {
+        const res = await bettingContract
+          .connect(signer)
+          .participate(Number(query.id), Number(query.team), amount);
+        data = await res.wait();
+      } else {
+        const res = await lotteryContract
+          .connect(signer)
+          .participateLottery(Number(query.id));
+        data = await res.wait();
+      }
+      getTokenBalanceHandler();
+      getMaticBalanceHandler();
 
-    const transactionObj = {
-      blockHash: data.blockHash,
-      blockNumber: data.blockNumber,
-      gasUsed: Number(data.gasUsed),
-      cumulativeGasUsed: Number(data.cumulativeGasUsed),
-      effectiveGasPrice: Number(data.effectiveGasPrice),
-      transactionHash: data.transactionHash,
-      transactionIndex: data.transactionIndex,
-      type: data.type,
-      from: data.from,
-      to: data.to,
-      status: data.status,
-    };
-    setTransactionResponse(transactionObj);
-    setLoading(false);
+      const transactionObj = {
+        blockHash: data.blockHash,
+        blockNumber: data.blockNumber,
+        gasUsed: Number(data.gasUsed),
+        cumulativeGasUsed: Number(data.cumulativeGasUsed),
+        effectiveGasPrice: Number(data.effectiveGasPrice),
+        transactionHash: data.transactionHash,
+        transactionIndex: data.transactionIndex,
+        type: data.type,
+        from: data.from,
+        to: data.to,
+        status: data.status,
+      };
+      setTransactionResponse(transactionObj);
+      setLoading(false);
+    } catch (error) {
+      setError("Metamask Error");
+      setLoading(false);
+    }
   };
 
   return (
