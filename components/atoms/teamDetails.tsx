@@ -71,12 +71,9 @@ export const TeamDetails = (props: any) => {
     }
     console.log("matchDetails.timestamp=========", matchDetails.timestamp);
     console.log("+new Date() / 1000=========", +new Date() / 1000);
-    console.log(
-      "matchDetails.timestamp - 50000 < +new Date() / 1000=========",
-      matchDetails.timestamp - 50000 < +new Date() / 1000
-    );
+
     console.log("new Date=========", new Date());
-    if (matchDetails.timestamp - 50000 < +new Date() / 1000) {
+    if (matchDetails.timestamp < +new Date() / 1000) {
       setPromptDialog({
         open: true,
         actionName: "go back",
